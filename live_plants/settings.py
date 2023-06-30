@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zbf!g_xpsrj4$f^(pl*&3ry_w=gi5cfk7be5q^d_k&l2@16o91
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-minumthomas-pp5-a2cr1q16wq3.ws-eu100.gitpod.io']
+ALLOWED_HOSTS = ['8000-minumthomas-pp5-a2cr1q16wq3.ws-eu101.gitpod.io']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,10 @@ ROOT_URLCONF = 'live_plants.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
