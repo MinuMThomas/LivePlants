@@ -3,6 +3,7 @@ from .models import Item
 
 # Create your views here.
 
+
 def all_items(request):
     """ A view to show all items, including sorting and search queries """
 
