@@ -1,46 +1,21 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Plants
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'items' %}" class="dropdown-item">All Products</a>
-            </div>
-        </li>
-        
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                plants
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a  href="{% url 'items' %}?category=floweringplant,sacculants,house plants" class="dropdown-item">House Plants</a>
-                <a  href="{% url 'items' %}?category=floweringplant" class="dropdown-item">Flowering Plants</a>
-                <a  href="{% url 'items' %}?category=sacculents" class="dropdown-item">Sacculents</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                plant food and pots
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">plant food</a>
-                <a href="" class="dropdown-item">pots</a>
-               
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-            </div>
-        </li>
+      <li class="nav-item">
+        <a href="{% url 'home' %}" class="nav-text-color nav-link">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-text-color nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Items
+        </a>
+        <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="user-options">
+          <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
+          <a href="{% url 'items' %}?category=floweringplants" class="dropdown-item">Flowering Plants</a>
+          <a href="{% url 'items' %}?category=sacculents" class="dropdown-item">Sacculents</a>
+          <a href="{% url 'items' %}?category=pots" class="dropdown-item">Pots</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="{% url 'items' %}?category=clearence" class="nav-text-color nav-link">Clearence</a>
+      </li>
     </ul>
-</div>
+  </div>
