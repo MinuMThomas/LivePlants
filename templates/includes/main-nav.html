@@ -9,13 +9,15 @@
         </a>
         <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="user-options">
           <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
-          <a href="{% url 'items' %}?category=floweringplants" class="dropdown-item">Flowering Plants</a>
+          <a href="{% url 'items' %}?category=Flowering plants" class="dropdown-item">Flowering Plants</a>
           <a href="{% url 'items' %}?category=sacculents" class="dropdown-item">Sacculents</a>
           <a href="{% url 'items' %}?category=pots" class="dropdown-item">Pots</a>
+          <a href="{% url 'items' %}?sort=price&amp;direction=asc" class=" dropdown-item">Sort by Price</a>
+
         </div>
       </li>
       <li class="nav-item">
-        <a href="{% url 'items' %}?category=clearence" class="nav-text-color nav-link">Clearence</a>
+        <a href="{% url 'items' %}?category=clearance" class="nav-text-color nav-link">Clearence</a>
       </li>
     </ul>
   </div>
