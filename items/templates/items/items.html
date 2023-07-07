@@ -21,111 +21,112 @@
                     class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
             </a>
             {% endfor %}
-            <hr class="w-50 mb-1">
+           
         </div>
     </div>
-    <div class="row">
 
-
-        <!-- sorting by price-->
+        <!--  sorting by price -->
 
         <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2"></div>
-            <div class="col-12 my-auto order-md-last d-flex justify-content-center">
-                <div class="sort-select-wrapper w-60 mb-5">
-                    <select id="sort-selector" class="custom-select custom-select-sm border">
-                        <option value="reset" {% if current_sorting == 'None_None' %} selected{% endif %}>Sort by...
-                        </option>
-                        <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Low
-                            to high</option>
-                        <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>High to
-                            low</option>
-                    </select>
+            <div class="row mt-1 mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector"
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                            </option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                                (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                                (high to low)</option>
+                        </select>
+                    </div>
                 </div>
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        <span class="small"><a href="{% url 'items' %}">All items</a> | </span>
+                        {% endif %}
+                        {{ items|length }} items{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
+                </div>
+            </div>
+            <!-- sorting by price -->
 
-                <!-- sorted.... -->
-
-                <div class="row">
-                    {% for item in items %}
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                        <div class="card h-100 border-0">
-                            {% if item.image %}
-                            <a href="{% url 'item_detail' item.id %}">
-                                <img class="card-img-top img-fluid" src="{{ item.image.url }}" alt="{{ item.name }}">
-                            </a>
-                            {% else %}
-                            <a href="{% url 'item_detail' item.id %}">
-                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                    alt="{{ item.name }}">
-                            </a>
-                            {% endif %}
-                            <div class="card-body pb-0">
-                                <p class="mb-0">{{ item.name }}</p>
-                            </div>
-                            <div class="card-footer bg-white pt-0 border-0 text-left">
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="lead mb-0 text-left font-weight-bold">${{ item.price }}</p>
-                                    </div>
-
-
-                                    <!-- <— stock—> -->
-                                    <div>
-                                        {% if item.stock %}
-                                        <p class="mt-3">In stock</p>
-                                        {% else %}
-                                        <p class="mt-3 text-danger">Out of stock</p>
-                                        {% endif %}
-                                    </div>
-                                    <hr>
-
-                                    <!-- <— item stock —> -->
-
-                                    {% if item.category %}
-                                    <p class="small mt-1 mb-0">
-                                        <a class="text-muted"
-                                            href="{% url 'items' %}?category={{ item.category.name }}">
-                                            <i class="fas fa-tag mr-1"></i>{{ item.category.friendly_name }}
-                                        </a>
-                                    </p>
-                                    {% endif %}
+            <div class="row">
+                {% for item in items %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 border-0">
+                        {% if item.image %}
+                        <a href="{% url 'item_detail' item.id %}">
+                            <img class="card-img-top img-fluid" src="{{ item.image.url }}" alt="{{ item.name }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'item_detail' item.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ item.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold">${{ item.price }}</p>
                                 </div>
+                                <hr>
+
+                                <!-- item stock -->
+
+                                {% if item.stock %}
+                                <p class="mt-3">In stock</p>
+                                {% else %}
+                                <p class="mt-3 text-danger">Out of stock</p>
+                                {% endif %}
+                                <hr>
+
+                                <!-- stock -->
+
+                                {% if item.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a class="text-muted" href="{% url 'items' %}?category={{ item.category.name }}">
+                                        <i class="fas fa-tag mr-1"></i>{{ item.category.friendly_name }}
+                                    </a>
+                                </p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:1 %}
-                <div class="col-12 d-sm-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:2 %}
-                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:3 %}
-                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:4 %}
-                <div class="col-12 d-none d-xl-block mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% endfor %}
             </div>
+            {% if forloop.counter|divisibleby:1 %}
+            <div class="col-12 d-sm-none mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:2 %}
+            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:3 %}
+            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:4 %}
+            <div class="col-12 d-none d-xl-block mb-5">
+                <hr>
+            </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div>
+</div>
 <div class="text-center mt-5 mb-5">
-    <a class="btn btn-outline scroll-btn">
-        <span class=" icon">
-            <i class="fas fa-chevron-up" aria-hidden="true"></i>
-        </span>
-        <span>Back to top</span>
-    </a>
+    <button class="btn btn-primary scroll-btn">Scroll to Top</button>
 </div>
 {% endblock %}
 {% block postloadjs %}
@@ -149,6 +150,7 @@
         });
     });
 </script>
+</body>
 
 <!-- javascript for price selector -->
 <script>
