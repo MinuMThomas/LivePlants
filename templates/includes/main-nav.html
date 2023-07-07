@@ -1,23 +1,22 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
       <li class="nav-item">
-        <a href="{% url 'home' %}" class="nav-text-color nav-link">Home</a>
+        <a href="{% url 'home' %}" class="nav-text-color nav-link font-weight-bold">Home</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-text-color nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">Items
+        <a class="nav-text-color nav-link font-weight-bold" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">Shop
         </a>
         <div class="dropdown-menu border-0 nav-text-color" aria-labelledby="user-options">
           <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
           <a href="{% url 'items' %}?category=Flowering plants" class="dropdown-item">Flowering Plants</a>
           <a href="{% url 'items' %}?category=sacculents" class="dropdown-item">Sacculents</a>
           <a href="{% url 'items' %}?category=pots" class="dropdown-item">Pots</a>
-          <a href="{% url 'items' %}?sort=price&amp;direction=asc" class=" dropdown-item">Sort by Price</a>
-
+        
         </div>
       </li>
-      <li class="nav-item">
-        <a href="{% url 'items' %}?category=clearance" class="nav-text-color nav-link">Clearence</a>
+      <li class="nav-item ">
+        <a href="{% url 'items' %}?category=clearance" class="nav-text-color nav-link font-weight-bold">Clearence</a>
       </li>
     </ul>
   </div>
