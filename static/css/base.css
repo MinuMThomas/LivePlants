@@ -75,6 +75,13 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.scroll-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+  }
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
