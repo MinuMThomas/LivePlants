@@ -9,7 +9,6 @@ def cart_contents(request):
     cart_items = []
     total = 0
     item_count = 0
-    
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery = settings.FREE_DELIVERY_THRESHOLD - total
