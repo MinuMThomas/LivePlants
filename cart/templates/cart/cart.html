@@ -96,4 +96,42 @@
             </div>
         </div>
     </div>
+
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'items/includes/quantity_input_script.html' %}
+
+
+<script>
+    // Update quantity on click
+    $('.update-btn').click(function (e) {
+        let form = $(this).prev('.update-form');
+        form.submit();
+    });
+
+
+    // Remove item and reload on click
+    $('.remove-btn').click(function (e) {
+        let csrfToken = "{{ csrf_token }}";
+        let itemClass = $(this).attr('class').split('remove_')[1];
+        let url = `/cart/remove/${itemClass}`;
+        let data = {
+            'csrfmiddlewaretoken': csrfToken
+        };
+
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    });
+
+    // back to top button
+    $('.top-btn').click(function (e) {
+        window.scrollTo(0, 0);
+    });
+</script>
+
 {% endblock %}
