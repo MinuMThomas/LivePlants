@@ -30,21 +30,20 @@ def add_to_cart(request, item_id):
             cart[item_id] = quantity
             messages.success(request, f'{item} successfully added to Cart!')
     except RuntimeError:
-        messages.error(request, "Whoops, We've encountered a problem, we'll get straight onto it, in the meantime you could always try again??")
+        messages.error(request, "Sorry, We've encountered a problem, we'll resolve it soon, in the meantime you could always try again!!")
 
     request.session['cart'] = cart
     return redirect(redirect_url)
 
 
 def adjust_cart(request, item_id):
-    """Adjust the quantity of the specified item to the specified amount"""
+    """Adjust the quantity of the item"""
 
     item = get_object_or_404(Item, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
-    """ Prevent anyone ordering more than the limit of 99 items or entering /
-        negative values"""
+    """ solution to prevent anyone ordering more than the limit"""
     if quantity > 99:
         messages.error(
             request,

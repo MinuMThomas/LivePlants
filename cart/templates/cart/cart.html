@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cart_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -37,7 +38,7 @@
                     </div>
                     <div class="col-12 col-sm-6 order-sm-last">
                         <p class="my-0">Price Each: €{{ item.item.price }}</p>
-                        <p><strong>Subtotal: </strong>€{{ item.item.price }}</p>
+                        <p><strong>Subtotal: </strong>€{{ item.item.price | calc_subtotal:item.quantity }}</p>
                     </div>
                     <div class="col-12 col-sm-6">
                         {% include "cart/quantity-form.html" %}
@@ -77,7 +78,7 @@
                             {% include "cart/quantity-form.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">€{{ item.item.price }}</p>
+                            <p class="my-0">€{{ item.item.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
