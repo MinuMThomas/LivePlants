@@ -100,7 +100,7 @@ a.category-badge > span.badge:hover {
     right: 30px;
     z-index: 99;
   }
-  /* ------------------------------- bootstrap toasts */
+    /* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -117,7 +117,19 @@ a.category-badge > span.badge:hover {
     height: 2px;
 }
 
-/* ------------------------------- Convenience classes - colors copied from Bootstrap */
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -155,7 +167,6 @@ a.category-badge > span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
