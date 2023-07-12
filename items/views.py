@@ -65,6 +65,7 @@ def item_detail(request, item_id):
 
     return render(request, 'items/item_detail.html', context)
 
+
 @login_required
 def add_item(request):
     """ Add a item to the store """
