@@ -3,10 +3,12 @@ html {
 }
 
 body {
-    background: url('/media/plant_bg.avif') no-repeat center center fixed;
-    background-size: cover;
+    /* background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #555; */
+    background: rgb(182,238,174);
+    background: radial-gradient(circle, rgba(182,238,174,1) 0%, rgba(25,199,107,1) 100%);
+    height: calc(50vh - 104px);
     font-family: 'Roboto Slab', serif;
 }
 
