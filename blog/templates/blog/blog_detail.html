@@ -1,12 +1,56 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<!-- Empty container for space -->
+<div class="container header-container mt-5 mb-5">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
-  <h1>{{ blog.title }}</h1>
+<div class="overlay"></div>
+<div class="container-fluid mt-5">
+    <div >
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                <a href="{{ blog.image.url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                </a>
+            </div>
+        </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="items-details-container">
+                      <div class="card text-center">
+                        <div class="card-header">
+                          {{ blog.title }}
+                        </div>
+                        <div class="card-body card-text">
+                            {{ blog.content }}
+                         <h5>not working {{ blog.content }}
+                         </h5>
+                          <a href="{% url 'blog:blog_list' %}"class="btn btn-primary">Go back to blog</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                          {{ blog.date }}
+                        </div>
+                      </div>
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    <div class="col-12">
+                        <a href="{% url 'items' %}" class="btn btn-custom mt-3">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span>Continue Shopping</span>
+                        </a>
+                    </div>
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-  {% if blog.image %}
-    <img src="{{ blog.image.url }}" alt="{{ blog.title }}" width="200">
-  {% endif %}
-
-  <p>{{ blog.content }}</p>
-  <p>Published Date: {{ blog.date }}</p>
 {% endblock %}
