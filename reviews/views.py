@@ -29,9 +29,12 @@ def add_review(request, item_id):
             review.save()
             messages.success(request, f"Your review for '{item.name}' has been submitted!")
             return redirect(reverse('item_detail', args=[item.id]))
+            # return redirect(request.META.get('HTTP_REFERER'))
         else:
             messages.error(request, "Yikes, something went wrong. Please ensure your fields are valid")
             return redirect(reverse('item_detail', args=[item.id]))
+            # return redirect(request.META.get('HTTP_REFERER'))
+
     else:
         form = ReviewForm()
 
