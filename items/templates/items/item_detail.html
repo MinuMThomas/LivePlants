@@ -84,6 +84,24 @@
                                                 </div>
                                                 {% endif %}
 
+
+
+                                                <!-- View reviews if there are any  -->
+                <a href="{% url 'reviews:reviews' item.id %}" class="btn btn-custom mt-1">
+                    <span>Reviews</span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+                <!-- Add a review -->
+                <a href="{% url 'reviews:add_review' item.id %}" class="btn btn-outline mt-1">
+                    <span class="icon">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                    <span>Add a review</span>
+                </a>
+
+
                         <!-- add item to the cart -->
                     {% if item.stock %}
                 <form class="form" action="{% url 'add_to_cart' item.id %}" method="POST">
