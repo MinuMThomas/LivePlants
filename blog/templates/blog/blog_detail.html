@@ -11,32 +11,28 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
-<div class="container-fluid mt-5">
-    <div >
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="image-container my-5">
-                <a href="{{ blog.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ blog.image.url }}" alt="{{ blog.title }}">
-                </a>
-            </div>
-        </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="items-details-container">
-                      <div class="card text-center">
-                        <div class="card-header">
-                          {{ blog.title }}
+<div class="row">
+    <div class="blog-container col-10 offset-1">
+            <div>
+                        <p >{{ blog.title }}</p>
+                        <p></p>{{ blog.content }}</p>
+
+                   
+                        <p class="lead mb-0 text-left">{{ blog.date }}</p>
+                    </div>
+                        <hr>
+                 
+           
+                      <!-- dont delete -->
+                      <div class="form-row">
+                        <div class="col-12">
+                            <a href="{% url 'blog:blog_list' %}" class="btn btn-outline mt-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span>Back to blog</span>
+                            </a>
                         </div>
-                        <div class="card-body card-text">
-                            {{ blog.content }}
-                         <h5>not working {{ blog.content }}
-                         </h5>
-                          <a href="{% url 'blog:blog_list' %}"class="btn btn-primary">Go back to blog</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                          {{ blog.date }}
-                        </div>
-                      </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     <div class="col-12">
                         <a href="{% url 'items' %}" class="btn btn-custom mt-3">
