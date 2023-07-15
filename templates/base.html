@@ -39,17 +39,13 @@
     {% endblock %}
     <title>Live Plants {% block extra_title %}{% endblock %}</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
-  <header class="container-fluid fixed-top bg-white">
-      <!-- <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex"> -->
-   <div class="container-fluid">
-          <div id="topnav" class="row pt-lg-2 mt-3 justify-content-center">
-              <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
-                  <a class="navbar-brand nav-link main-logo-link" href="{% url 'home' %}">
-                      <span class="logo my-auto  my-0 ">Live Plants</span>
-                  </a>
-              </div>
-          </div>
+<header class="container-fluid fixed-top">
+    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center">
+            <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                <h2 class="logo-font text-success my-0 justify-content-center"><strong>Live Plants</strong></h2>
+            </a>
+        </div>
           <!-- <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="" class="nav-link main-logo-link">
                   <h2 class="logo-font text-success my-0"><strong>Live Plants</strong></h2>
