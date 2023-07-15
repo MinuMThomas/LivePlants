@@ -156,36 +156,40 @@
   {% endblock %}
 
 <div>
-  <footer class="fixed-bottom text-center text-white" id="template-footer">
-      <div class="text-center p-2">
-          <ul class="list-inline" id="footer-list">
-              <li class="list-inline-item">
-                  <a href="{% url 'contact:contact' %}">Contact Us</a>
-              </li>
-              <li class="list-inline-item">
-                  <a href="">Privacy Policy</a>
-              </li>
+  <footer class="footer mt-auto py-3 dark-bg">
+    <div class="container pt-3">
+        <section class="footer">
+            <div class="row">
+                <div>
+    
+                 <ul class="list-inline" id="footer-list">
+                    <li class="list-inline-item">
+                        <a href="{% url 'contact:contact' %}">Contact Us</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="">News letter</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=" {% url 'blog:blog_list' %}">Blog</a>
+                    </li>
+      
+                    <li class="list-inline-item">
+                        <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                    </li>
+                    <li class="list-inline-item" id="education-disclaimer">
+                        <small>For educational purposes only.</small>
+                    </li>
+                  </ul>
+                  <hr class="block-divider block-divider--short">
+                </div>
+             </div>
 
-
-              <li class="list-inline-item">
-                  <a href="">News letter</a>
-              </li>
-              <li class="list-inline-item">
-                  <a href=" {% url 'blog:blog_list' %}">Blog</a>
-              </li>
-
-              <li class="list-inline-item">
-                  <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-              </li>
-              <li class="list-inline-item" id="education-disclaimer">
-                  <small>For educational purposes only.</small>
-              </li>
-          </ul>
           <div>
               <!-- mailchimp -->
               <div id="mc_embed_shell">
-           
-            <div id="mc_embed_signup">
                 <form action="https://gmail.us21.list-manage.com/subscribe/post?u=1d01aee275bdacb3db9432361&amp;id=3d12422a4d&amp;f_id=00e063e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                     <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
                         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
@@ -197,21 +201,15 @@
                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
                     /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
                     <input type="text" name="b_1d01aee275bdacb3db9432361_3d12422a4d" tabindex="-1" value="">
-                </div>
-                    <div class="optionalParent">
-                        <div class="clear foot">
-                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                            <p class="brandingLogo" style="margin: 0px auto;"><a href="http://eepurl.com/ivElp-" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="referral badge"></a></p>
-                        </div>
-                    </div>
-                </div>
-            </form>
+                
+             </form>
             </div>
             
 
               <!-- end mail chimp -->
           </div>
-      </div>        
+        </section>
+    </div>        
   </footer>
 </div>
 
