@@ -159,46 +159,19 @@
   <footer class="footer mt-auto py-3 dark-bg">
     <div class="container pt-3">
         <section class="footer">
-            <div class="row">
-                <div>
-    
-                 <ul class="list-inline" id="footer-list">
-                    <li class="list-inline-item">
-                        <a href="{% url 'contact:contact' %}">Contact Us</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="">Privacy Policy</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="">News letter</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href=" {% url 'blog:blog_list' %}">Blog</a>
-                    </li>
-      
-                    <li class="list-inline-item">
-                        <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-                    </li>
-                    <li class="list-inline-item" id="education-disclaimer">
-                        <small>For educational purposes only.</small>
-                    </li>
-                  </ul>
-                  <hr class="block-divider block-divider--short">
-                </div>
-             </div>
-
-          <div>
+           
+          <div class="row">
               <!-- mailchimp -->
               <div id="mc_embed_shell">
                 <form action="https://gmail.us21.list-manage.com/subscribe/post?u=1d01aee275bdacb3db9432361&amp;id=3d12422a4d&amp;f_id=00e063e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                    <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+                    <div id="mc_embed_signup_scroll"><h5>Subscribe</h5>
                         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                         <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
                     <div id="mce-responses" class="clear foot">
                         <div class="response" id="mce-error-response" style="display: none;"></div>
                         <div class="response" id="mce-success-response" style="display: none;"></div>
                     </div>
-                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <div aria-hidden="true" style="position: absolute; right: -5000px;">
                     /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
                     <input type="text" name="b_1d01aee275bdacb3db9432361_3d12422a4d" tabindex="-1" value="">
                 
@@ -208,6 +181,34 @@
 
               <!-- end mail chimp -->
           </div>
+          <div class="row">
+            <div>
+
+             <ul class="list-inline" id="footer-list">
+                <li class="list-inline-item">
+                    <a href="{% url 'contact:contact' %}">Contact Us</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="">News letter</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href=" {% url 'blog:blog_list' %}">Blog</a>
+                </li>
+  
+                <li class="list-inline-item">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                </li>
+                <li class="list-inline-item" id="education-disclaimer">
+                    <small>For educational purposes only.</small>
+                </li>
+              </ul>
+              <hr class="block-divider block-divider--short">
+            </div>
+         </div>
+
         </section>
     </div>        
   </footer>
