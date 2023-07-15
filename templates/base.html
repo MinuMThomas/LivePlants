@@ -40,13 +40,13 @@
     <title>Live Plants {% block extra_title %}{% endblock %}</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <header class="container-fluid fixed-top">
+  <header class="container-fluid fixed-top bg-white">
       <!-- <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex"> -->
    <div class="container-fluid">
           <div id="topnav" class="row pt-lg-2 mt-3 justify-content-center">
               <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
                   <a class="navbar-brand nav-link main-logo-link" href="{% url 'home' %}">
-                      <span class="logo my-auto nav-text-success my-0 font-weight-light">Live Plants</span>
+                      <span class="logo my-auto  my-0 ">Live Plants</span>
                   </a>
               </div>
           </div>
@@ -156,10 +156,9 @@
   {% endblock %}
 
 <div>
-  <footer class="footer mt-auto py-3 dark-bg">
+  <footer class="footer  mt-auto py-3 dark-bg">
     <div class="container pt-3">
-        <section class="footer">
-           
+        <section class="footer">    
           <div class="row">
               <!-- mailchimp -->
               <div id="mc_embed_shell">
@@ -171,18 +170,16 @@
                         <div class="response" id="mce-error-response" style="display: none;"></div>
                         <div class="response" id="mce-success-response" style="display: none;"></div>
                     </div>
-                <div aria-hidden="true" style="position: absolute; right: -5000px;">
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
                     /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
                     <input type="text" name="b_1d01aee275bdacb3db9432361_3d12422a4d" tabindex="-1" value="">
-                
-             </form>
-            </div>
-            
-
-              <!-- end mail chimp -->
+                </div>
+                </form>
+                </div>
+             <!-- end mail chimp -->
           </div>
-          <div class="row">
-            <div>
+        <div class="row">
+            
 
              <ul class="list-inline" id="footer-list">
                 <li class="list-inline-item">
@@ -206,8 +203,8 @@
                 </li>
               </ul>
               <hr class="block-divider block-divider--short">
-            </div>
-         </div>
+            
+        </div>
 
         </section>
     </div>        

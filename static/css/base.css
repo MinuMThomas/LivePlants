@@ -13,6 +13,18 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+img {
+    width: 70%;
+}
+
+.logo {
+    color: #28a745;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif ;
+    
+
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -256,7 +268,7 @@ a.category-badge > span.badge:hover {
 /* mailchimp */
 
 #mc_embed_signup {
-    background: #a1f2c5ef;
+    background-color: #ee93ddef;
     clear: left;
     font: 14px Raleway, sans-serif;
     width: 50%;
@@ -264,7 +276,7 @@ a.category-badge > span.badge:hover {
 }
 
 #mc_embed_signup #mce-EMAIL-HELPERTEXT {
-    background: #a3e7d0 !important;
+    background-color: #c4a0c7 !important;
 }
 
 #mc_embed_signup .img {
