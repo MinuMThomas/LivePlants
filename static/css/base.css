@@ -252,6 +252,13 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+/* mailchimp */
+#mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+    width: 600px;
+}
 
 /* -------------------------------- Media Queries */
 

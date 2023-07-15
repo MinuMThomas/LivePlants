@@ -9,7 +9,7 @@ from .forms import ReviewForm
 def reviews(request, item_id):
     """A view to show all available reviews for the current item"""
     item = get_object_or_404(Item, pk=item_id)
-    reviews = Review.objects.filter(user=True, item=item)
+    reviews = Review.objects.filter(item=item)
     template = 'reviews/reviews.html'
     context = {'reviews': reviews, 'item': item}
     return render(request, template, context)
@@ -30,10 +30,12 @@ def add_review(request, item_id):
             messages.success(request, f"Your review for '{item.name}' has been submitted!")
             return redirect(reverse('item_detail', args=[item.id]))
             # return redirect(request.META.get('HTTP_REFERER'))
+            # return redirect(reverse('add_review', args=[item.id]))
         else:
             messages.error(request, "Yikes, something went wrong. Please ensure your fields are valid")
             return redirect(reverse('item_detail', args=[item.id]))
             # return redirect(request.META.get('HTTP_REFERER'))
+            # return redirect(reverse('add_review', args=[item.id]))
 
     else:
         form = ReviewForm()
