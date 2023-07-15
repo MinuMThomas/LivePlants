@@ -25,7 +25,7 @@ var style = {
         iconColor: '#dc3545'
     }
 };
-const card = elements.create('card', {
+var card = elements.create('card', {
     style: style
 });
 card.mount('#card-element');
@@ -47,7 +47,7 @@ card.addEventListener('change', function (event) {
 });
 
 // Handle form submit
-let form = document.getElementById('payment-form');
+var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function (ev) {
     ev.preventDefault();
@@ -58,7 +58,7 @@ form.addEventListener('submit', function (ev) {
     $('#payment-form').fadeToggle(100);
     $('#loading-overlay').fadeToggle(100);
 
-    let saveInfo = Boolean($('#id-save-info').attr('checked'));
+    var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
     var postData = {
@@ -121,4 +121,5 @@ form.addEventListener('submit', function (ev) {
         location.reload();
     })
 });
+
 
