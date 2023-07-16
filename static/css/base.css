@@ -27,7 +27,10 @@ img {
     font-weight: 600;
     font-family: 'Roboto Slab', serif ;
     
+}
 
+#logo-dis {
+    display: none;
 }
 /* from Bulma */
 .icon {
@@ -328,4 +331,10 @@ a.category-badge > span.badge:hover {
     body {
         height: calc(100vh - 116px);
     }
+
+    div#logo-dis {
+         display: block !important;
+    }
+    
+    
 }

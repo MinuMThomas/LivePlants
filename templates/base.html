@@ -21,7 +21,10 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -117,7 +120,8 @@
     </div>
     <div id="delivery-banner" class="row text-center">
         <div class="col bg-light text-info">
-            <h4 class="logo-font my-1">Free shipping on orders over €{{ free_delivery_threshold }}!</h4>
+            <div class="logo" id="logo-dis">Live Plants</div>
+            <h6 class="logo-font my-1">Free shipping on orders over €{{ free_delivery_threshold }}!</h6>
         </div>
     </div>
     <!-- navbar toggler -->
@@ -166,9 +170,9 @@
     <footer class="footer  mt-auto py-3">
         <div class="container pt-3">
             <section class="footer">
-                <div class="row">
+                <div class="row d-flex justify-content-end">
                     <!-- mailchimp -->
-                    <div id="mc_embed_shell">
+                    <div id="mc_embed_shell ">
                         <div id="mc_embed_signup">
                             <form
                                 action="https://gmail.us21.list-manage.com/subscribe/post?u=1d01aee275bdacb3db9432361&amp;id=3d12422a4d&amp;f_id=00e063e1f0"
