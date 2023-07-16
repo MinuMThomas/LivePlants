@@ -31,8 +31,8 @@
                                 alt="{{ blog.title }} {{ blog.content }}">
                         </a>
                         <div class="card-body pb-0">
-                            <p class="mb-0">{{ blog.title }}</p>
-                            <p class="mb-0">{{ blog.content }}</p>
+                            <p class="card-title mb-0"><h5>{{ blog.title }}</h5></p>
+                         
 
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
@@ -73,13 +73,8 @@
 <div class="mt-5 text-center">
     <a class="btn btn-custom mt-5 mx-auto my-auto" href="">Contact Us</a>
 </div>
-<div class="text-center mt-3 mb-5">
-    <a class="btn btn-outline top-btn">
-        <span class=" icon">
-            <i class="fas fa-chevron-up" aria-hidden="true"></i>
-        </span>
-        <span>Back to top</span>
-    </a>
+<div class="text-center mt-5 mb-5">
+    <button class="btn btn-primary scroll-btn">Scroll to Top</button>
 </div>
 
 {% endblock %}
@@ -87,11 +82,22 @@
 {% block postloadjs %}
 {{ block.super }}
 
-<!-- javascript for back to top button -->
-<script>
-    $('.top-btn').click(function (e) {
-        window.scrollTo(0, 0);
+ <!-- javascript for back to top button -->
+ <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+          $('.scroll-btn').fadeIn();
+        } else {
+          $('.scroll-btn').fadeOut();
+        }
+      });
+
+      $('.scroll-btn').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+      });
     });
-</script>
+  </script>
 
 {% endblock %}
