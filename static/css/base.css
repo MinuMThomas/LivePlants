@@ -4,14 +4,7 @@ html {
 
 body {
     background: rgb(200,255,238);
-    background: linear-gradient(0deg, rgba(200,255,238,0) 0%, rgba(79,166,128,1) 0#4fa680%);
-    /* background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555; */
-    /* background: rgb(174, 238, 210); */
-    /* background: radial-gradient(circle, rgba(182,238,174,1) 0%, #f8fafa 100%); */
-    /* background:  radial-gradient(circle, rgb(112 143 107) 0%, rgb(197 246 220) 100%); */
-    /* background: radial-gradient(circle, rgba(182,238,174,1) 0%, rgba(25,199,107,1) 100%); */
+    background: linear-gradient(0deg, rgba(200,255,238,0) 0%,rgba(79,166,128,1) 0#4fa680%);
     height: calc(50vh - 104px);
     font-family: 'Roboto Slab', serif;
 }
@@ -56,20 +49,20 @@ img {
 }
 
 .btn-custom {
-    background: #0E1D18 !important;
+    background: #244b3e6b !important;
     color: #fff5ee !important;
-    border-radius: 5px !important;
+    border-radius: 1px !important;
 }
 
 .btn-custom:hover,
 .btn-custom:active,
 .btn-custom:focus {
     background: #fff5ee !important;
-    color: #0E1D18 !important;
+    color: #397b65 !important;
 }
 
 .btn-black {
-    background: black;
+    background: rgb(47, 65, 63);
     color: white;
 }
 
@@ -93,7 +86,7 @@ img {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid rgb(38, 126, 209) !important;
 }
 
 .bg-black {

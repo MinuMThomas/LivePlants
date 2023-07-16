@@ -32,7 +32,7 @@ def add_review(request, item_id):
             # return redirect(request.META.get('HTTP_REFERER'))
             # return redirect(reverse('add_review', args=[item.id]))
         else:
-            messages.error(request, "Yikes, something went wrong. Please ensure your fields are valid")
+            messages.error(request, "Oops!!, something went wrong. Please ensure your fields are valid")
             return redirect(reverse('item_detail', args=[item.id]))
             # return redirect(request.META.get('HTTP_REFERER'))
             # return redirect(reverse('add_review', args=[item.id]))
@@ -46,17 +46,3 @@ def add_review(request, item_id):
                'reviews': reviews,
                }
     return render(request, template, context)
-
-
-@login_required
-def delete_review(request, review_id):
-    """Admin can delete reviews"""
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
-    review = get_object_or_404(Review, pk=review_id)
-    review.delete()
-
-    messages.success(request, f'You deleted the review titled: "{review.title}"')
-    return redirect(reverse('items'))

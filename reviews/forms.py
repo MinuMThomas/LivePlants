@@ -7,13 +7,13 @@ class ReviewForm(forms.ModelForm):
 
     class Meta:
         model = Review
-        exclude = ('user', 'image_url')
+        exclude = ('user', 'image_url', 'item')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         placeholders = {
-            'title': 'One word description',
-            'body': 'Go on, give us some more detail...',
+            'title': 'word about plant or delivery',
+            'body': 'please add review...',
         }
 
         for field in self.fields:
