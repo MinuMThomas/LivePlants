@@ -2,22 +2,25 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
     {% block extra_meta %}
     {% endblock %}
 
     {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
     {% endblock %}
 
@@ -25,14 +28,19 @@
     {% endblock %}
 
     {% block corejs %}
-        <script src="https://kit.fontawesome.com/4eae670378.js" crossorigin="anonymous"></script>
-        
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-         <!-- stripe -->
-         <script src="https://js.stripe.com/v3/"></script>
-         
+    <script src="https://kit.fontawesome.com/4eae670378.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+    <!-- stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+
     {% endblock %}
 
     {% block extra_js %}
@@ -46,198 +54,217 @@
                 <h2 class="logo-font text-success my-0 justify-content-center"><strong>Live Plants</strong></h2>
             </a>
         </div>
-          <!-- <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <!-- <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="" class="nav-link main-logo-link">
                   <h2 class="logo-font text-success my-0"><strong>Live Plants</strong></h2>
               </a>
           </div> -->
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <form method="GET" action="{% url 'items' %}">
-                  <div class="input-group w-100">
-                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                      <div class="input-group-append">
-                          <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                              <span class="icon">
-                                  <i class="fas fa-search"></i>
-                              </span>
-                          </button>
-                      </div>
-                  </div>
-              </form>
-          </div>
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                  <li class="list-inline-item dropdown">
-                      <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <div class="text-center">
-                              <div><i class="fas fa-user fa-lg"></i></div>
-                              <p class="my-0">My Account</p>
-                          </div>
-                      </a>
-                      <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                          {% if request.user.is_authenticated %}
-                              {% if request.user.is_superuser %}
-                                  <a href="{% url 'add_item' %}" class="dropdown-item">Product Management</a>
-                              {% endif %}
-                              <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                          {% else %}
-                              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                          {% endif %}
-                      </div>
-                  </li>
-                  <li class="list-inline-item">
-                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
-                          <div class="text-center">
-                              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                              <p class="my-0">
-                                  {% if grand_total %}
-                                      €{{ grand_total|floatformat:2 }}
-                                  {% else %}
-                                      €0.00
-                                  {% endif %}
-                              </p>
-                          </div>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-       </div>
-          <div id="delivery-banner" class="row text-center">
-              <div class="col bg-light text-info">
-                  <h4 class="logo-font my-1">Free shipping on orders over €{{ free_delivery_threshold }}!</h4>                
-              </div>            
-          </div>
-          <!-- navbar toggler -->
-          <div class="row bg-white">
-              <nav class="navbar navbar-expand-lg navbar-light w-100">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
-                      aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  {% include 'includes/mobile-top-header.html' %}
-                  {% include 'includes/main-nav.html' %}
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <form method="GET" action="{% url 'items' %}">
+                <div class="input-group w-100">
+                    <input class="form-control border border-black rounded-0" type="text" name="q"
+                        placeholder="Search our site">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                <li class="list-inline-item dropdown">
+                    <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <div class="text-center">
+                            <div><i class="fas fa-user fa-lg"></i></div>
+                            <p class="my-0">My Account</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a href="{% url 'add_item' %}" class="dropdown-item">Product Management</a>
+                        {% endif %}
+                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                        {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                        {% endif %}
+                    </div>
+                </li>
+                <li class="list-inline-item">
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        href="{% url 'view_cart' %}">
+                        <div class="text-center">
+                            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                            <p class="my-0">
+                                {% if grand_total %}
+                                €{{ grand_total|floatformat:2 }}
+                                {% else %}
+                                €0.00
+                                {% endif %}
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="delivery-banner" class="row text-center">
+        <div class="col bg-light text-info">
+            <h4 class="logo-font my-1">Free shipping on orders over €{{ free_delivery_threshold }}!</h4>
+        </div>
+    </div>
+    <!-- navbar toggler -->
+    <div class="row bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            {% include 'includes/mobile-top-header.html' %}
+            {% include 'includes/main-nav.html' %}
 
-              </nav>
-          </div>
-  
-      </div>
-  
-  </header>
+        </nav>
+    </div>
+
+    </div>
+
+</header>
 
 
-  {% if messages %}
-      <div class="message-container">
-          {% for message in messages %}
-          {% with message.level as level %}
-          {% if level == 40 %}
-          {% include 'includes/toasts/toast_error.html' %}
-          {% elif level == 30 %}
-          {% include 'includes/toasts/toast_warning.html' %}
-          {% elif level == 25 %}
-          {% include 'includes/toasts/toast_success.html' %}
-          {% else %}
-          {% include 'includes/toasts/toast_info.html' %}
-          {% endif %}
-          {% endwith %}
-          {% endfor %}
-      </div>
-  {% endif %}
+{% if messages %}
+<div class="message-container">
+    {% for message in messages %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
+</div>
+{% endif %}
 
-  {% block page_header %}
-  {% endblock %}
+{% block page_header %}
+{% endblock %}
 
-  {% block content %}
-  {% endblock %}
+{% block content %}
+{% endblock %}
 
 <div>
-  <footer class="footer  mt-auto py-3 dark-bg">
-    <div class="container pt-3">
-        <section class="footer">    
-          <div class="row">
-              <!-- mailchimp -->
-              <div id="mc_embed_shell">
-                <form action="https://gmail.us21.list-manage.com/subscribe/post?u=1d01aee275bdacb3db9432361&amp;id=3d12422a4d&amp;f_id=00e063e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                    <div id="mc_embed_signup_scroll"><h5>Subscribe</h5>
-                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-                    <div id="mce-responses" class="clear foot">
-                        <div class="response" id="mce-error-response" style="display: none;"></div>
-                        <div class="response" id="mce-success-response" style="display: none;"></div>
+    <footer class="footer  mt-auto py-3 dark-bg">
+        <div class="container pt-3">
+            <section class="footer">
+                <div class="row">
+                    <!-- mailchimp -->
+                    <div id="mc_embed_shell">
+                        <div id="mc_embed_signup">
+                            <form
+                                action="https://gmail.us21.list-manage.com/subscribe/post?u=1d01aee275bdacb3db9432361&amp;id=3d12422a4d&amp;f_id=00e063e1f0"
+                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                class="validate" target="_blank">
+                                <div id="mc_embed_signup_scroll">
+                                    <h5>Subscribe</h5>
+                                    <div class="indicates-required"><span class="asterisk">*</span>required</div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                        </label>
+                                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL"
+                                            required="" value=""><span id="mce-EMAIL-HELPERTEXT"
+                                            class="helper_text"></span></div>
+                                    <div id="mce-responses" class="clear foot">
+                                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                                    </div>
+                                    <!-- real people should not fill this in and expect good things - do not remove
+                                        this or risk form bot signups  -->
+                                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                        
+                                        <input type="text" name="b_1d01aee275bdacb3db9432361_3d12422a4d" tabindex="-1"
+                                            value="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                    /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                    <input type="text" name="b_1d01aee275bdacb3db9432361_3d12422a4d" tabindex="-1" value="">
+                    <!-- end mail chimp -->
                 </div>
-                </form>
-                </div>
-             <!-- end mail chimp -->
-          </div>
-        <div class="row">
-            
+                <div class="row">
 
-             <ul class="list-inline" id="footer-list">
-                <li class="list-inline-item">
-                    <a href="{% url 'contact:contact' %}">Contact Us</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="">Privacy Policy</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="">News letter</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href=" {% url 'blog:blog_list' %}">Blog</a>
-                </li>
-  
-                <li class="list-inline-item">
-                    <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-                </li>
-                <li class="list-inline-item" id="education-disclaimer">
-                    <small>For educational purposes only.</small>
-                </li>
-              </ul>
-              <hr class="block-divider block-divider--short">
-            
+
+                    <ul class="list-inline" id="footer-list">
+                        <li class="list-inline-item">
+                            <a href="{% url 'contact:contact' %}">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="">News letter</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href=" {% url 'blog:blog_list' %}">Blog</a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                        </li>
+                        <li class="list-inline-item" id="education-disclaimer">
+                            <small>For educational purposes only.</small>
+                        </li>
+                    </ul>
+                    <hr class="block-divider block-divider--short">
+
+                </div>
+
+            </section>
         </div>
-
-        </section>
-    </div>        
-  </footer>
+    </footer>
 </div>
 
-  {% block postloadjs %}
+{% block postloadjs %}
 <!-- mailchimp -->
 
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
-             <script type="text/javascript">
-                 (function ($) {
-                     window.fnames = new Array();
-                     window.ftypes = new Array();
-                     fnames[0] = 'EMAIL';
-                     ftypes[0] = 'email';
-                     fnames[1] = 'FNAME';
-                     ftypes[1] = 'text';
-                     fnames[2] = 'LNAME';
-                     ftypes[2] = 'text';
-                     fnames[3] = 'ADDRESS';
-                     ftypes[3] = 'address';
-                     fnames[4] = 'PHONE';
-                     ftypes[4] = 'phone';
-                     fnames[5] = 'BIRTHDAY';
-                     ftypes[5] = 'birthday';
-                 }(jQuery));
-                 var $mcj = jQuery.noConflict(true);
-             </script>
+<script type="text/javascript">
+    (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+</script>
 <!-- mailchimp -->
 
-  <script>
-      $('.toast').toast('show');
-  </script>
-  {% endblock %}
+<script>
+    $('.toast').toast('show');
+</script>
+{% endblock %}
 
-  
+
 </body>
+
 </html>

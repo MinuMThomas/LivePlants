@@ -7,7 +7,8 @@ body {
     height: calc(100vh - 164px);
     color: #555; */
     background: rgb(174, 238, 210);
-    background: radial-gradient(circle, rgba(182,238,174,1) 0%, #f8fafa 100%);
+    /* background: radial-gradient(circle, rgba(182,238,174,1) 0%, #f8fafa 100%); */
+    background-color:  radial-gradient(circle, rgb(112 143 107) 0%, rgb(197 246 220) 100%);
     /* background: radial-gradient(circle, rgba(182,238,174,1) 0%, rgba(25,199,107,1) 100%); */
     height: calc(50vh - 104px);
     font-family: 'Roboto Slab', serif;
@@ -18,7 +19,7 @@ img {
 }
 
 .logo {
-    color: #28a745;
+    color: #119d52;
     font-size: 40px;
     font-weight: 600;
     font-family: 'Roboto Slab', serif ;
@@ -268,19 +269,19 @@ a.category-badge > span.badge:hover {
 /* mailchimp */
 
 #mc_embed_signup {
-    background-color: #ee93ddef;
+    background-color: #93eecaef;
     clear: left;
-    font: 14px Raleway, sans-serif;
-    width: 50%;
+    font: 10px Raleway, sans-serif;
+    width: 100%;
     padding-top: 3px;
 }
 
 #mc_embed_signup #mce-EMAIL-HELPERTEXT {
-    background-color: #c4a0c7 !important;
+    background-color: #93eecaef!important;
 }
 
 #mc_embed_signup .img {
-    width: 50%;
+    width: 100%;
 }
 
 #mc_embed_signup .optionalParent {
