@@ -184,67 +184,7 @@ Flake8 was also used in the terminal and there are some false positive problems 
 ## Manual Testing
 ### Testing User Stories
 ### **User Stories**
-| **Number** | **User Story** | **Result** |
-| :-- | :-- | :-- |
-| **ADMIN & Store Management** |  |  |  |  |  |
-| #1 | As an admin, I can add/edit/delete products through an easy-to-use front end admin page so that I can manage the products available. | PASS | 
-| #2 | As an admin, I can add/delete Blogs | PASS | 
-| #3 | As a admin I can view customer orders so that I can full fill the orders or amend if needed | PASS |
-| #4 | As a Admin I can manage the reviews on the site so that I can remove them if I no longer feel they are still necessary or needed | PASS | 
-| #5 | As an admin I can manage the Blogs content so that I can make amendments if needed | PASS |
-| #6 | As a Admin I can view queries sent via contact form so that I can act upon them accordingly | PASS  |
-| #7 | ADMIN & Store Management | PASS |
-| - | As an admin, I can view and customer enquiries on the front-end without having to access the admin panel. | PASS |
-| **Viewing and Navigation** |
-| #8 | As a Site User, I can intuitively navigate around the site so that I can easily find content and info I am looking for | PASS | 
-| #9 | As a Site User, I can view a variety of items on a page so that I can select an item to view. | PASS | 
-| #10 | As a user I can search for items so that I can find specific items quickly | PASS |
-| #11 | As a user I can sort items by category so that I can filter through the items on offer | PASS | 
-| #12 | As a user I can sort items by price so that I can filter through the items on offer  | PASS |
-| #13 | As a user I can browse through all available item so that I can see all my options for buying | PASS | 
-| #14 | As a user I can look at item details so that I can gain greater knowledge about the item.  | PASS | 
-| #15 | As a user I can easily see the price of the item so that I can easily decide if an item is in my budget. | PASS |
-| #16 | As a user I can easily see reviews of an item if any so that I can gain insight into what others have thought of their purchase once it was in their hands.  | PASS |
-| #19 | EPIC Viewing and Navigation  | PASS |
-| **User Account and Profile** |
-| #20 | As a user I can create, read, edit my account so that I can have a more personalised experience and update my details accordingly  |  PASS  |
-| #21 | As a user I can login in to my account so that I can view my order history  | PASS |
-| #22 | As a user I can logout of my acc so that I can safely use public computers |  PASS | 
-| #23 | As a site user, I can save my personal details in my user profile so that I do not have to fill them out for future orders.  |  PASS  |
-| #24 | As a site user, I can view my order history so that I can remember what purchases I've made |  PASS |
-| #26 | As a site user, I can recover my password in case I forget it so that I can recover access to my account.  | |
-| #27 | EPIC User Account and Profile | |
-| **Purchasing** |
-| #28 | As a shopper, I can add a variety of items in different quantities to my shopping bag so that I can purchase them all at once. | PASS |
-| #29 | As a shopper, I can view a sum total of my shopping cart as I am shopping so that I can keep within my budget. | PASS |
-| #30 | As a shopper, I can view the contents of my shopping cart at any time so I can easily make comparisons and adjustments | PASS |
-| #31 | As a shopper, I can adjust the quantity of individual items in my cart so that I can easily make changes before I purchase. | PASS |
-| #32 | As a shopper, I can see a summary of my shopping cart when I checkout so that I can verify my choices before I commit to purchasing. | PASS | 
-| #33 | As a shopper, I can checkout securely so that I can I maintain the level of trust on submitting my card details |  PASS |
-| #34 | As a shopper, I can view my order confirmation after checkout so that I know my purchase was successful. | PASS |
-| #35 | As a shopper, I can receive an email confirmation of my order so that I have a record of my purchase. | PASS |
-| #36 | EPIC Purchasing | PASS |
-| **User Interaction** | 
-| #37 | As a site user, I can receive confirmation on my interactions in the site so that I can be sure my actions were successful or unsuccessful. | PASS | 
-| #38 | As a site user, I can submit an enquiry form so that I can have my question, complaint or commission query answered. | PASS |
-| #39 | As a site user, I can add a review in relation to a product I received so that I can give my feedback.  |  PASS  |
-| #41 | As a site user, I can sign up for the website's newsletter so that I can keep up to date with the latest news and collections | PASS | 
-|#42 |  User Interaction | PASS |
-| | As a site user I can use the contact form so that I can contact the site owners | PASS |
-| #61 | As a user I can access frequently asked questions so I can potentially have a query answered without having to make contact | PASS |
-| #62 | As an admin I can add, edit and delete frequently asked questions so customers can have potential queries answered without having to make contact. | PASS |
 
- 
-
-# Future Features:
-- As a shopper, I can checkout as a guest so I don't have to sign up for an account. 
-- As a shopper, I can add products to my saved items so that I can go back and view them at a later date. 
-- As a shopper, I can view my saved products so I can find them easily in the one location. 
-- As a shopper, I can checkout as a guest so I don't have to sign up for an account.
-- add a live blog to the site
-- blog: As a site user I can view paginated posts so that I can select which posts to view 
-- blog: As a site user I can view all posts so that I can decide what I may be interested in reading 
-- blog: As a site user I can comment to the blog posts so that I can express my opinion to the post 
 
 ------
 # Manual Testing
@@ -348,12 +288,12 @@ Manual tests were applied as I was building features to ensure all features adde
 
 &nbsp;
 
-#### COMISSIONS PAGE 
+#### BLOG PAGE 
 | Testing | Expected Outcome | Steps | Hover | Results |
 |--------|---------|---------|---------|---------|
 | header displays the correct label | - | - | - | PASS | 
 | cards display correct info | - | - | - | PASS | 
-| image field | Clicking on image field brings you to commission detail page | clicked | - | PASS | 
+| image field | Clicking on image field brings you to Blog detail page | clicked | - | PASS | 
 | Back to top | Clicking brings you to the top of the page | Clicked | PASS | PASS |
 
 &nbsp;
@@ -403,8 +343,8 @@ Manual tests were applied as I was building features to ensure all features adde
 | Subtotal calculated | - | - | - | PASS | 
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
 | DELIVERY CHARGES |
-| Delivery threshold met | Delivery charge is 0, free delivery message in blue | Added amount over 70euro | - | PASS | 
-| Delivery threshold unmet | Delivery charge is added, Free delivery prompt message in red | Added amount under 70euro | - | PASS | 
+| Delivery threshold met | Delivery charge is 0, free delivery message in blue | Added amount over 60euro | - | PASS | 
+| Delivery threshold unmet | Delivery charge is added, Free delivery prompt message in red | Added amount under 60euro | - | PASS | 
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
 | Back to top | Clicking brings you to the top of the page | Clicked | PASS | PASS |
 | Secure checkout |  Clicking brings you to checkout page | Clicked | PASS | PASS |
@@ -452,9 +392,6 @@ Manual tests were applied as I was building features to ensure all features adde
 | Relevant field and labels are displayed | - | - | - | PASS |
 | Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form | - | PASS |
 | Form Validation Only Required Fields | clicking submits review, review renders in correct area |  submit only required fields  | - | PASS |
-| Form Validation With Image | clicking submits review, review renders in correct area with image | Submit form with image | -  | PASS |
-| Form Validation Without Image | clicking submits review, review renders in correct area with stock image of the item | Submit form with image | -  | PASS |
-| Form Validation ALL DETAILS | Fill all details of form | User returned to homepage and post is displayed with all relavant info on home page and all extra details | - | PASS |
 | Dropdown menus | dropdown features a list of items                     | Clicked button | PASS | PASS |
 | Select Image has prompt| - | - | - | PASS |
 | Select Image Adds filename | - | - | - |  PASS |
@@ -472,12 +409,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | header displays the correct label | Reviews header should match the item | clicked on reviews | PASS | PASS | 
 | appear by Oldest to newest | - | - | - |  PASS |
 | All fields are displayed | - | added a review | - | PASS | 
-| Featured tick box | ticking this publishes review to site  otherwise renders in django admin | ticked | PASS | PASS | 
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
-| ADMIN EXTRAS |
-| Delete | Delete modal pop upp appears on click | clicked  | PASS | PASS |
-| Delete Review | deletes review on click | clicked  PASS | PASS |
-| Back button | brings user back to item detail page | clicked | PASS | PASS | 
 | REVIEWS TOAST MESSAGES |
 | ADD review| review added message appears | Added review | PASS | PASS |
 | Delete review | Your review was deleted message appears | Deleted a review | PASS | PASS  | 
@@ -489,63 +421,8 @@ Manual tests were applied as I was building features to ensure all features adde
 |--------|---------|---------|---------|--------|
 | Relevant field and labels are displayed | - | - | - | PASS |
 | Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |  Try to submit empty form | - | PASS |
-| Form Validation Only Required Fields | Form submits and rendered in enquiries  |  Try to submit only title | - | PASS |
-| Form Validation With Image | Post Will be uploaded and user returned to homepage, default category will be general| Try to submit only title and content | - | PASS |
-| Form Validation ALL DETAILS | Fill all details of form | User returned to homepage and post is displayed with all relavant info on ADMIN Enquiries page | - | PASS |
-| Dropdown menu | displays a list to choose from when clicked  | clicked  | PASS | PASS | 
-| Select Image | Select Image has prompt| - | - | PASS| PASS |
-| Select Image | Select Image Adds filename | added files | - | PASS | 
-| Submit button | clicking renders form to admin enquiries page | Clicked | PASS | PASS |
-| Cancel Button | clicking brings you to home page | Clicked | PASS | PASS |
+| Form Validation Only Required Fields | Form submits and rendered in enquiries  |  Try to submit required field| - | PASS |
 | ITEMS TOAST MESSAGES | message displays when submitted | submitted form | - | PASS | 
-
-&nbsp;
-
-### CONTACT FORM VIEW: ENQUIRIES
-| Testing | Expected Outcome | Steps | Hover | Results |
-|--------|---------|---------|---------|---------|
-| Contact form submissions display in Admin Enquiries Page | - | - | - | PASS | 
-| ACCESS | Can only be accessed by Admin | - | - | PASS |
-| All fields are displayed | - | - | - | PASS | 
-| display and ordering | Are numbered appear by date time (oldest 1st) | Added an enquiry | - | PASS |
-| Optional fields | Optional fields display None or N/A if not completed | Added enquiry without these fields | - | PASS |
-| Image | Image is rendered if added | added  image to enquiry | - | PASS | 
-
-&nbsp;
-
-#### ADD FAQ FORM 
-| Testing | Expected Outcome | Steps | Hover | Results |
-|--------|---------|---------|---------|--------|
-| CRUD FEATURES FAQS | Admin can create, read update and delete a FAQ | - | - | PASS |
-| ACCESS | Can only be accessed by Admin | - | - | PASS |
-| Display | Relevant field and labels are displayed | - | - | PASS |
-| Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form | - | PASS |
-| Form Validation Question | Form validation will prompt for user action to fill content if only Question is filled |  Try to submit only Question  | - | PASS |
-| Form Validation Answer | renders prompt | Try to submit only answer and content | - | PASS |
-| Form Validation ALL DETAILS | Fill all details of form | appears in faq section | - | PASS |
-| Submit button | submites faq and appears in faq | - | - | PASS |
-| Cancel Button | cancels faq admin brough back to home page | - | - | PASS |
-| FAQS TOAST MESSAGES |
-| Add Faq | Your Comment was deleted message appears | Added a comment | - | PASS |
-
-&nbsp;
-
-### FAQ FORM VIEW: FAQS
-| Testing | Expected Outcome | Steps | Hover | Results |
-|--------|---------|---------|---------|---------|
-| FAQ form submissions display on FAQS Page |  - | - | - | PASS |
-| All fields are displayed |  - | - | - | PASS |
-| Ordered By Date | oldest 1st | Added FAQ | - | PASS |
-| Contact Us | Clicking link opens the contact form page | clicked link |  PASS | PASS |
-| Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
-| ADMIN EXTRAS |
-| ACCESS| Can only be accessed by Admin | - | - | PASS |
-| Edit FAQ | clicking brings to Edit FAQ page | clicked | PASS | PASS |
-| Delete FAQ | Delete modal pop up appears | clicked | PASS | PASS |
-| Delete modal | Faq is deleted | clicked | PASS | PASS |
-| FAQS TOAST MESSAGES ||
-| Edit Faq | Your faq was edited message appears | Edited a faq | PASS | PASS |
-| Delete Faq | message appears | deleted a faq | PASS | PASS |
 
 &nbsp;
 
@@ -557,10 +434,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | Category Dropdown | clicking displays a list of options | clicked | PASS | PASS |
 | Form Validation EMPTY | Form validation will prompt for user action if empty form is submitted |   Try to submit empty form | - |PASS |
 | Form Validation Only Required Fields | Dsiplays item in store and in the correct category fields |  Submitted from filled correctly  | - | PASS |
-| Form Validation Without Image | cannnot submit form without image | - | -  | PASS  |
 | Form Validation ALL DETAILS | Fill all details of form | User returned to homepage and post is displayed with all relevant info on all items page and all extra details on the items detail page, post appears in relevant category search | - | PASS |
-| Select Image has prompt| - | - | - | PASS |
-| Select Image Adds filename |  - | - | PASS| PASS |
 | ADD item button | Adds item to the store | clicked | PASS| PASS |
 | Cancel Button | brings user to all Items page | clicked | PASS| PASS |
 | ITEMS TOAST MESSAGES |
@@ -581,7 +455,6 @@ Manual tests were applied as I was building features to ensure all features adde
 |--------|---------|---------|---------|---------
 | ACCESS | Can only be accessed by Admin | - | - | PASS |
 | Image renders | Image of item renders | - | - | PASS |
-| With image | Filename appears in red | added a new filename | - | PASS |
 
 #### ERROR PAGES 
 | Testing | Expected Outcome | Steps | Results |
@@ -598,12 +471,10 @@ Manual tests were applied as I was building features to ensure all features adde
 #### FOOTER
 | Testing | Expected Outcome | Steps | Hover | Results |
 |--------|---------|---------|---------|---------|
-| Fontawesome icons | Clicking Fontawesome icons opens the respective page in a new tab, LinkedIN and Github are linked to my own pages | Clicked each icon | PASS | PASS | PASS |
+| Facebook link | Clicking facebook link opens the respective page in a new tab, | Clicked each icon | PASS | PASS | PASS |
 | Contact Us | Clicking link opens the contact form page | clicked link |  PASS | PASS |
-| FAQ | Clicking link opens the FAQ page | clicked link |  PASS | PASS |
 | privacy policy | Clicking link opens the FAQ page | clicked link | PASS | PASS |
 | Mailchimp | Subscribing should add you to mailchimp email | added email and clicked subscribe , checked if the mailchimp user number increased | PASS | PASS |
-| Irish Wildlife Trust Logo | Clicking Logo link brings you to the IWT.ie page | Clicked logo | PASS | PASS |
 | Footer Logo | Footer Logo link brings you to the home page | Clicked footer logo | PASS | PASS |
 
 &nbsp;
