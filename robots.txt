@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Sitemap: https://liveplants-61cae3ad1da7.herokuapp.com/sitemap.xml
