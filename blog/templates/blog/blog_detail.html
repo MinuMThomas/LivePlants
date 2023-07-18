@@ -26,7 +26,7 @@
         <div>
             <!-- The blog img -->
             <img src="{{ blog.image.url }}" style="width:50%;" alt="blog image">
-             <hr>
+            <hr>
             <div class="row">
 
                 <p>{{blog.content}}</p>
@@ -56,5 +56,7 @@
             </div>
             <input type="hidden" name="redirect_url" value="{{ request.path }}">
         </div>
+    </div>
+</div>
 
-        {% endblock%}
+    {% endblock%}
