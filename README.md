@@ -56,11 +56,11 @@ This website is designed as the final project for the Code Institute Diploma in 
 
 
 ---
-## Database Schema
+##  Flow Chart and Database Schema
 
-Several custom models were predicted to be required when building the site. On top of the standard Sculpture/Order models these included a Newsletter signup Model a Message Model and a customer Review model. The database schema was drawn out by hand.
+- Design Flow Chart [chart](./readme_images/pp5-flowchart.png)
 
-![Database Schema Diagram](./readme_images/DB_diagram.png)
+- Data Base Diagram[Database Diagram](./readme_images/DB_diagram.png)
 
 
 These colours were used:
@@ -95,7 +95,9 @@ green: #4fa680 , #397b65, #93eecaef
 
 ## Agile Development
 
-For this project, the Agile methodology was employed, utilizing GitHub as the platform. User Stories were created as issues on GitHub, clearly outlining the purpose of each issue. Each User Story was divided into acceptance criteria and tasks, facilitating a structured approach. Prioritization was accomplished by leveraging GitHub labels, which were color-coded for easy distinction. This Agile approach fostered efficient project planning and execution.
+
+Agile methodology in GitHub was used to create this website.  User Stories were created using issues on git hub.
+The link to the project board can be found [here](https://github.com/users/MinuMThomas/projects/15)
 
 ### Epics
 
@@ -520,37 +522,61 @@ class MediaStorage(S3Boto3Storage):
 * In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors.
 * Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
 
+
 #### Forking the repository
-By forking the GitHub Repository you can make a copy of the original repository to view or change without it effecting the original repository
-This can be done by
-* Log into GitHub or create an account.
-* Locate the repository at https://github.com/KSheridan86/project-5-RossAnthonyDesigns .
-* At the top of the repository, on the right side of the page, select "Fork" from the buttons available.
-* A copy of the repository should now be created in your own repository.
+
+ - To make a copy of a GitHub repository without affecting the
+   original one, you can fork it. 
+ - Here are the steps:
+ - Log into your GitHub account or create one if you don’t
+   have one already.
+ - Go to the original repository that you want to fork,On the 
+   top right corner of the repository page, click the “Fork"
+   button.
+ - GitHub will create a copy of the repository in your own  
+   account, which you can view or modify without affecting
+   the original repository.
+
 
 #### Create a clone of this repository
-Creating a clone enables you to make a copy of the repository at that point in time - this lets you run a copy of the project locally:
-This can be done by:
-* Navigate to https://github.com/KSheridan86/project-5-RossAnthonyDesigns
-* click on the arrow on the green code button at the top of the list of files
-* select the clone by https option and copy the URL it provides to the clipboard
-* navigate to your code editor of choice and within the terminal change the directory to the location you want to clone the repository to.
-* type 'git clone' and paste the https link you copied from github
-* press enter and git will clone the repository to your local machine
 
+   - To create a local copy of a GitHub repository, you can
+    use the clone command. This allows you to have the same
+    files and code as the original repository at a specific
+    point in time.
+    Here are the steps to follow:
+   - Go to the repository on GitHub.
+    Click on the green "Code" button and select "Clone with
+    HTTPS”.
+   - Copy the URL that is displayed.
+   - Open your code editor and navigate to the location where
+   - you want to clone the repository.
+   - In the terminal, type 'git clone' followed by the URL you
+     copied from GitHub.
+   - Press Enter and Git will clone the repository to your
+    local machine.
 
 [Back to the Top](#table-of-contents)
 
 -----
+#### Resources Used
+
+* The Django documentation was used extensively during development of this project
+* The Cloudinary documentation was used.
+* The Code Institute reference material was used as a general reference 
+* The Django walk through project 'I think before I Blog'
+
+
 
 ## Credits
 
-All Images used across the site are original and where created just for this project except for the header/footer background which was sourced from pexels.com.
-The Black Icons used across the site were sourced from fontawesome and flaticon.com, attributions below.
+- All Images used across the site were sourced from
+      [pexels](https://www.pexels.com)
+- Social media links were all sourced from Font Awesome.
+- Logo created from free logomaker site [site](https://myfreelogomaker.com/)
 
-
-I relied heavily on the Code institute course work, particularly the Django walk through Boutique Ado and project4 - PP4-BB projects.
-Further research was done by building walk through projects available freely on youtube 
+- I relied on the  Django walk through projects mostly.
+    Further research was done by building walk through projects available freely on youtube and especially pyplane [youtube page](https://www.youtube.com/playlist?list=PLgjw1dR712joFJvX_WKIuglbR1SNCeno1) 
 
 -----
 
