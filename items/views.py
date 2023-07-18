@@ -42,7 +42,8 @@ def all_items(request):
                 messages.error(request, "You didn't"
                                "enter any search criteria!")
                 return redirect(reverse('items'))
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = (
+                Q(name__icontains=query) | Q(description__icontains=query))
             items = items.filter(queries)
 
     context = {
@@ -68,7 +69,7 @@ def item_detail(request, item_id):
 
 @login_required
 def add_item(request):
-    """ Add a item to the store """
+    """ Add an item to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
