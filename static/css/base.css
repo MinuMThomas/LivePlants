@@ -300,7 +300,7 @@ a.category-badge > span.badge:hover {
 
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -328,5 +328,7 @@ a.category-badge > span.badge:hover {
          display: block !important;
     }
     
-    
+    .logo-shop{
+        padding-top: 6em;
+    }
 }
