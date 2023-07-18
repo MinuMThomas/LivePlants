@@ -13,9 +13,9 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="row text-center">
-    <div class="col">
+    <div class="review col">
         {% if reviews %}
-        <h2 class="mb-4">Reviews for "{{ item.name }}"</h2>
+        <h2 class="mb-5">Reviews for "{{ item.name }}"</h2>
             <img class="card-img-top" alt="Card image cap" src="{{ item.image.url }}" alt="{{ item.name }}">
         </a>
         {% if item.category %}
