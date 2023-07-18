@@ -1,6 +1,5 @@
 {% load static %}
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -79,7 +78,7 @@
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                <li class="list-inline-item dropdown">
+                <li class="dropdown">
                     <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
@@ -136,9 +135,6 @@
 
         </nav>
     </div>
-
-    </div>
-
 </header>
 
 
@@ -172,7 +168,7 @@
             <section class="footer">
                 <div class="row d-flex justify-content-end">
                     <!-- mailchimp -->
-                    <div id="mc_embed_shell ">
+                    <div id="mc_embed_shell">
                         <div id="mc_embed_signup">
                             <form
                                 action="https://gmail.us21.list-manage.com/subscribe/post?u=1d01aee275bdacb3db9432361&amp;id=3d12422a4d&amp;f_id=00e063e1f0"
@@ -192,14 +188,17 @@
                                         <div class="response" id="mce-success-response" style="display: none;"></div>
                                     </div>
                                     <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                                        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                                        <input type="text" name="b_1d01aee275bdacb3db9432361_3d12422a4d" tabindex="-1" value="">
+                                        /* real people should not fill this in and expect good things - do not remove
+                                        this or risk form bot signups */
+                                        <input type="text" name="b_1d01aee275bdacb3db9432361_3d12422a4d" tabindex="-1"
+                                            value="">
                                     </div>
-                                        <div class="optionalParent">
-                                            <div class="clear foot">
-                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                            </div>
+                                    <div class="optionalParent">
+                                        <div class="clear foot">
+                                            <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                                class="button" value="Subscribe">
                                         </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -207,27 +206,26 @@
                     <!-- end mail chimp -->
                 </div>
                 <div class="row">
-
-
                     <ul class="list-inline" id="footer-list">
-                        <li class="list-inline-item">
+                        <li>
                             <a href="{% url 'contact:contact' %}">Contact Us</a>
                         </li>
-                        <li class="list-inline-item">
-                            <a  href="https://www.privacypolicygenerator.info/live.php?token=YSHZUauOohMIkKw63vnN49saSegPqAzX" target="_blank">Privacy Policy</a>
+                        <li>
+                            <a href="https://www.privacypolicygenerator.info/live.php?token=YSHZUauOohMIkKw63vnN49saSegPqAzX"
+                                target="_blank">Privacy Policy</a>
                         </li>
-                        <li class="list-inline-item">
+                        <li>
                             <a href=" {% url 'blog:blog_list' %}">Blog</a>
                         </li>
 
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/profile.php?id=100094665704253" target="_blank" rel="noopener">Facebook</a>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100094665704253" target="_blank"
+                                rel="noopener">Facebook</a>
                         </li>
-                        <li class="list-inline-item" id="education-disclaimer">
+                        <li>
                             <small>For educational purposes only.</small>
                         </li>
                     </ul>
-                    <!-- <hr class="block-divider block-divider--short"> -->
 
                 </div>
 
@@ -239,9 +237,9 @@
 {% block postloadjs %}
 <!-- mailchimp -->
 
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
-<script type="text/javascript">
+<script>
     (function ($) {
         window.fnames = new Array();
         window.ftypes = new Array();
