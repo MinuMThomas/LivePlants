@@ -3,7 +3,7 @@
 ## E-Commerce store for a selling house plants
 ------------------------------------
 
-![alt text](./docs/forged_nature_responsive.png)
+![alt text](./readme_images/responsive_img.png)
 
 ### Live site available [here](https://liveplants-61cae3ad1da7.herokuapp.com/). 
 
@@ -60,19 +60,13 @@ This website is designed as the final project for the Code Institute Diploma in 
 
 Several custom models were predicted to be required when building the site. On top of the standard Sculpture/Order models these included a Newsletter signup Model a Message Model and a customer Review model. The database schema was drawn out by hand.
 
-![Database Schema Diagram](./docs/database-schema.jpg)
+![Database Schema Diagram](./readme_images/DB_diagram.png)
 
 
-These colours were:
+These colours were used:
 
-Grey/Blue: #6f8ca2
-
-Dusty Orange: #ff85436b
-
-Whitesmoke: #f5f5f5
-
-And Bootstraps Text-Muted class for sligtly greyed out text.
-
+green: #4fa680 , #397b65, #93eecaef
+ 
 
 [Back to the Top](#table-of-contents)
 
@@ -112,7 +106,7 @@ For this project, the Agile methodology was employed, utilizing GitHub as the pl
 5. User Feedback 
 6. Payments 
 7. User Profile 
-8. Contact Artist/Social links 
+8. Contact site Owner/Social links 
 9. Customer Reviews 
 ### User Stories
 
@@ -175,7 +169,7 @@ These are the user stories that were completed within the projects first release
 The plant sell website follows a Business to Consumer (B2C) model, enabling direct transactions between the business and individual customers. It offers a wide selection of plants, allowing customers of all backgrounds and preferences to conveniently purchase their desired plants for personal use or gifting purposes.
 
 #### **Marketing Strategy**
-As Live Plants is a start-up business with limited marketing budget, there are several effective ways to boost sales and brand visibility. Utilizing Facebook to share engaging content and drive traffic is a primary and straightforward strategy. Paid advertisements can be employed to target specific demographics and enhance brand awareness. Leveraging social media platforms also facilitates customer feedback and improves customer service. Below is an image of the Facebook page, and you can access it [here](https://www.facebook.com/profile.php?id=100094665704253).[page](https://www.facebook.com/profile.php?id=100094558639714)
+As Live Plants is a start-up business with limited marketing budget, there are several effective ways to boost sales and brand visibility. Utilizing Facebook to share engaging content and drive traffic is a primary and straightforward strategy. Paid advertisements can be employed to target specific demographics and enhance brand awareness. Leveraging social media platforms also facilitates customer feedback and improves customer service. Below is an image of the Facebook page, and you can access it [here](https://www.facebook.com/profile.php?id=100094558639714)
 Another effective method is utilizing Google Ads, which can greatly enhance brand awareness and assist with SEO efforts. Google Ads can also aid in targeting specific long-tail keywords and improve the overall ranking of the website.
 
 Another marketing strategy involves sending regular newsletters to the mailing list obtained through sign-up forms. These newsletters would include links to recent articles, new products, special offers, and promotions. This helps in building brand awareness and fostering a community around the brand.
@@ -186,10 +180,9 @@ To achieve high search engine rankings, the website implemented various SEO tech
 
 
 #### **Facebook Page**
-![Facebook Page](./docs/Facebook-mockup.png)
+![Facebook Page](./readme_images/fb_page1.png)
 
 ---
-
 
 ## Features
 
@@ -211,43 +204,47 @@ To achieve high search engine rankings, the website implemented various SEO tech
 #### Home page
 A welcoming homepage was built to welcome the user to the site and clearly convey the sites purpose.
 
-![Home Page]()
+![Home Page](./readme_images/home.png)
 
 #### Navigation Bar
-The main navigation bar appears at the top of the page, clearly displaying the main navigational links users would require includinglink to Contact and Blog. All produts link has dropdown menu with categories. 
+The main navigation bar appears at the top of the page, clearly displaying the main navigational links users would require including link to Contact and Blog. All produts link has dropdown menu with categories. 
 
-![Nav Bar]()
+![Nav Bar](./readme_images/home_nav.png)
 
 
 #### Footer
 A common footer is utilised throughout the site and including newsletter signup form from mailchimp.
 
 
-![footer](./docs/desktop-footer.png)
+![footer](./readme_images/footer.png)
 
 
 #### Other Pages/Features
-[Shop]()
+[Shop](./readme_images/shop.png)
 
-[clearance]()
+[clearance](./readme_images/clearance.png)
 
-[Cart]()
+[Cart](./readme_images/cart.png)
 
-[Checkout]()
+[Checkout](./readme_images/checkout.png)
 
-[All Products]()
+[All Products](./readme_images/allprdt_dropdown.png)
 
-[Newsletter Signup]()
+[Subscribe](./readme_images/subscribe.png)
 
-[Register]()
+[Register](./readme_images/signup.png)
 
-[Sign In]()
+[Sign In](./readme_images/sign_in.png)
 
-[Site Admin]()
+[Site Admin](./readme_images/site_admin.png)
 
-[Individual Product Page]()
+[Individual Product Page](./readme_images/individual_pdt.png)
 
 [Reviews]()
+
+[Blog](./readme_images/Blog.png)
+
+[Blog deatail View](./readme_images/blog_detail.png)
 
 
 ## Future Enhancements
@@ -285,9 +282,9 @@ All validation screenshots are included below.
 
 All HTML validation returned the same result so I have included only 1 screenshot here.
 ## HTML
-![HTML Validation]()
+![HTML Validation](./readme_images/html.png)
 ## CSS
-![CSS Validation]()
+![CSS Validation](./readme_images/css.png)
 ## Script JS
 ![Script JS]()
 ## Stripe JS
@@ -299,7 +296,7 @@ All HTML validation returned the same result so I have included only 1 screensho
 #### Lighthouse Testing
 Below you can see the results of Googles Lighthouse Testing.
 
-![Lighthouse Testing]()
+![Lighthouse Testing](./readme_images/light_house.png)
 
 
 
@@ -364,7 +361,7 @@ Please refer to [TESTING.md](./TESTING.md) file for:
 
 ## Deployment
 
-The site was deployed via Heroku, and the live link can be found here - [Forged Nature](https://rossanthonydesigns.herokuapp.com/)
+The site was deployed via Heroku, and the live link can be found here - [Live Plants](https://liveplants-61cae3ad1da7.herokuapp.com/)
 
 ### Project Deployment
 
@@ -551,15 +548,9 @@ This can be done by:
 All Images used across the site are original and where created just for this project except for the header/footer background which was sourced from pexels.com.
 The Black Icons used across the site were sourced from fontawesome and flaticon.com, attributions below.
 
-- The Anvil Icon, (<a href="https://www.flaticon.com/free-icons/anvil" title="anvil icons">Anvil icons created by Agung Rama - Flaticon</a>) 
-- The Back to Top Icon (<a href="https://www.flaticon.com/free-icons/double-arrow" title="double arrow icons">Double arrow icons created by Rahul Kaklotar - Flaticon</a>)
-- Error 404 Icon (<a href="https://www.flaticon.com/free-icons/error-404" title="error 404 icons">Error 404 icons created by Freepik - Flaticon</a>)
-- Server Error Icon (<a href="https://www.flaticon.com/free-icons/error" title="error icons">Error icons created by Pixel perfect - Flaticon</a>)
-- Tick Icon (<a href="https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by kliwir art - Flaticon</a>)
-- All other small images including Social media links were sourced from Font Awesome.
 
-I relied heavily on the Code institute course work, particularly the Django walk through projects.
-Further research was done by building walk through projects available freely on youtube and Dennis Ivy's Django/Python course on Udemy.
+I relied heavily on the Code institute course work, particularly the Django walk through Boutique Ado and project4 - PP4-BB projects.
+Further research was done by building walk through projects available freely on youtube 
 
 -----
 
