@@ -4,7 +4,6 @@ html {
 
 body {
     background: rgb(200,255,238);
-    background: linear-gradient(0deg,rgba(200,255,238,0) 0%,rgba(79,166,128,1) 0#4fa680%);
     height: calc(50vh - 104px);
     font-family: 'Roboto Slab', serif ;
 }
