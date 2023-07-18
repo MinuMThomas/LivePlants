@@ -22,15 +22,16 @@ def add_to_cart(request, item_id):
         if item_id in list(cart.keys()):
             if cart[item_id] + quantity > 99:
                 cart[item_id] = 99
-                messages.success(request, f'{item} successfully added to Cart!')
+                messages.success(request, f'{item} successfully'
+                                 'added to Cart!')
             else:
                 cart[item_id] += quantity
-                
         else:
             cart[item_id] = quantity
             messages.success(request, f'{item} successfully added to Cart!')
     except RuntimeError:
-        messages.error(request, "Sorry, We've encountered a problem, we'll resolve it soon, in the meantime you could always try again!!")
+        messages.error(request, "We've encountered a problem,"
+                       "problem, we'll resolve it soon,!")
 
     request.session['cart'] = cart
     return redirect(redirect_url)

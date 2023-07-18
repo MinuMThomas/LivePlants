@@ -27,12 +27,14 @@ def add_review(request, item_id):
             review.item = item
             review.user = request.user
             review.save()
-            messages.success(request, f"Your review for '{item.name}' has been submitted!")
+            messages.success(request, f"Your review for '{item.name}' has"
+                             "been submitted!")
             return redirect(reverse('item_detail', args=[item.id]))
             # return redirect(request.META.get('HTTP_REFERER'))
             # return redirect(reverse('add_review', args=[item.id]))
         else:
-            messages.error(request, "Oops!!, something went wrong. Please ensure your fields are valid")
+            messages.error(request, "Oops!!, something went wrong."
+                           "Please ensure your fields are valid")
             return redirect(reverse('item_detail', args=[item.id]))
             # return redirect(request.META.get('HTTP_REFERER'))
             # return redirect(reverse('add_review', args=[item.id]))

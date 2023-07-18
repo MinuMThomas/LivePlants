@@ -9,8 +9,7 @@ class ReviewAdmin(admin.ModelAdmin):
         'title',
         'body',
         'date',
-       
-    )
+        )
 
     ordering = ('-date',)
 

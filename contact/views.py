@@ -7,6 +7,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ContactForm
 
+
 def contact(request):
     """
     View for the contact form.
@@ -24,4 +25,3 @@ def contact(request):
         form = ContactForm()
 
     return render(request, 'contact/contact.html', {'form': form})
-
