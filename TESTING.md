@@ -142,8 +142,8 @@ The only two errors came from JAvacript taken from Stripe and Mailchimp. I decid
 | add_review.html | PASS | 
 | Base.html toasts | PASS |
 | allauth email.html | PASS |
-| Checkout/js/stripe_elements.js | Error coming from Stripe |[Stripe-js](./docs/jshint/Stripe-js.png) [stripe-elements-js](./docs/jshint/stripe-elements-js.png) |
-| Base.html MAilchimp | Errors - see image |[mailchimp-js-errors](./docs/jshint/mailchimp-js-errors.png) |
+| Checkout/js/stripe_elements.js | Error coming from Stripe |[Stripe-js](./readme_images/stripe_js.png)|
+| Base.html MAilchimp | Errors - see image |[mailchimp-js-errors](./readme_images/mailchimp_js.png) |
 
 &nbsp;
 

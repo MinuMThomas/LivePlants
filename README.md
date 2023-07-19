@@ -51,12 +51,8 @@ This website is designed as the final project for the Code Institute Diploma in 
 ## Design
 -------
 
-### Wireframe mock-ups
 ---
-
-
----
-##  Flow Chart and Database Schema
+###  Flow Chart and Database Schema
 
 - Design Flow Chart [chart](./readme_images/pp5-flowchart.png)
 
@@ -73,7 +69,7 @@ green: #4fa680 , #397b65, #93eecaef
 ---
 
 ## UX
-*  The UX (User Experience) of Live Plants was designed to ensure a friendly and informative website. Users can easily explore and find products of interest, while the visually appealing design enhances the overall delightful and enjoyable online experience..
+*  The UX (User Experience) of Live Plants was designed to ensure a friendly and informative website. Users can easily explore and find products of interest, while the visually appealing design enhances the overall delightful and enjoyable online experience.
 
 ### The Sites Ideal User
 * The ideal user for Live Plants is anyone who has an interest in plants, gardening, or adding greenery to their surroundings. Whether you're a beginner looking to start your plant collection or an experienced gardener seeking new additions, Live Plants caters to users of all levels. The site welcomes plant enthusiasts of various ages and backgrounds, providing a platform to explore and purchase a wide range of plants conveniently.
@@ -110,10 +106,8 @@ The link to the project board can be found [here](https://github.com/users/MinuM
 7. User Profile 
 8. Contact site Owner/Social links 
 9. Customer Reviews 
+
 ### User Stories
-
-These are the user stories that were completed within the projects first release, by Epic.
-
 
 - User Sign in or Sign out
 	*  User Account Login / Logout - As a User, I would like to be able to login or logout of my account, so that I can avail of the sites full functionality
@@ -183,24 +177,6 @@ To achieve high search engine rankings, the website implemented various SEO tech
 
 #### **Facebook Page**
 ![Facebook Page](./readme_images/fb_page1.png)
-
----
-
-## Features
-
-**Features planned:**
-* User Profile - Create an account to leave customer reviews.
-* Users can login to their account.
-* Users can logout of their account.
-* Users can sign up to a Newsletter
-* Users can easily contact the site owner by filling in a contact form
-* Users can easily see the products available by navigating to the shop page
-* Logged in users can leave reviews of past purchases
-* Users can add/edit/delete items in a shopping cart
-* Users can finalize their purchase by inputting their card details and recieve order confirmation
-* Products - Admin can create, read, update and delete their own products.
-* Responsive Design - the site needs to be fully responsive to cover the wide variety of devices users may use to access an E-Commerce site.
-
 
 ---
 #### Home page
@@ -273,6 +249,14 @@ For the development of the site, I employed a manual testing approach. In additi
 
 #### Testing Overview
 
+
+## Testing 
+
+Please refer to [TESTING.md](./TESTING.md) file for:
+* Manual Testing and Results
+* Validation of all languages
+
+
 Testing was divided into different sections to ensure everything was tested individually with test cases developed for each area.
 
 
@@ -280,19 +264,9 @@ Testing was divided into different sections to ensure everything was tested indi
 All code files were validated using suitable validators for the specific language.
 HTML & CSS code passed the validation.
 JavaScript code produced one warning about an undefined variable but this is nothing to worry about as it is defined in another file.
-All validation screenshots are included below.
+All validation screenshots are included in [TESTING.md](./TESTING.md).
 
-All HTML validation returned the same result so I have included only 1 screenshot here.
-## HTML
-![HTML Validation](./readme_images/html.png)
-## CSS
-![CSS Validation](./readme_images/css.png)
-## Script JS
-![Script JS]()
-## Stripe JS
-![Stripe JS]()
-## Quantity Input JS
-![Quantity Input JS]()
+
 
 
 #### Lighthouse Testing
@@ -306,12 +280,6 @@ Below you can see the results of Googles Lighthouse Testing.
 All Custom Python & JavaScript code was manually tested multiple times during and after development.
 This is reflected in the fact that all of the user stories below are working and have produced no errors in the terminal or the console.
 
-## Testing 
-
-Please refer to [TESTING.md](./TESTING.md) file for:
-* Manual Testing and Results
-* Validation of all languages
-* Lighthouse scores
 
 
 
@@ -319,7 +287,7 @@ Please refer to [TESTING.md](./TESTING.md) file for:
 
 -----
 
-## Technologies
+## Resources Used
 
 * Python
 * Django
@@ -330,7 +298,7 @@ Please refer to [TESTING.md](./TESTING.md) file for:
     * Heroku PostgreSQL was used as the database for this project during development and in production.
 * JavaScript
     * Custom JavaScript was utilised to allow Users to close site messages and increment/decrement cart items.
-* Bootstrap 5
+* Bootstrap 4
     * Bootstrap was used for general layout and spacing requirements for the site.
 * Font Awesome
     * Was used for access to several icons for different sections where icons were appropriate.
@@ -346,7 +314,6 @@ Please refer to [TESTING.md](./TESTING.md) file for:
     * Amazone web servises used to store images and static files
 
 
-# **TECHNOLOGIES USED**
 ## **Languages Used**
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the content and structure of the site.
 * [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
@@ -378,7 +345,7 @@ Please refer to [TESTING.md](./TESTING.md) file for:
 * [GitHub](https://github.com/) is the project's git repository
 * [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) used to track and integrate issues for Agile Development
 * [Chrome DevTools](https://www.google.com/intl/en_uk/chrome/) - used for debugging, validation (Lighthouse) and taking fullscreen screenshots of the site
-* [ezgif](https://ezgif.com/)
+
 
 
 ## **Payment Processing Platform Used**
@@ -397,33 +364,30 @@ Stripe how to test cards interactively:
 * [AWS S3](https://aws.amazon.com/) was used to store the images and static files.
 ---
 
-# **TESTING**
-Please refer to [TESTING.md](./TESTING.md) file for:
-* Manual Testing and Results
-* Validation of all languages
-* Lighthouse scores
-
 <br/>
 
 
 
-# **CREDITS**
-## **Code** 
+## CREDITS
+### Code
 
-: The project very much got its start from Code Institutes walkthrough project
+The project very much got its start from Code Institutes walkthrough project Boutique Ado
 
 PROJECTS I looked through for inspiration and problem solving
-https://github.com/SamuelMasters/play-store
-https://github.com/rachel-o-donnell/black_and_white_beauty
-https://github.com/LauraMayock/Leather-works-sustainable-products
-https://github.com/KSheridan86/project-5-RossAnthonyDesigns
-https://github.com/Iris-Smok/JoyfulBookstore-PP5
-https://github.com/rachel-o-donnell/the-witchs-cauldron
-https://github.com/MinuMThomas/pp4-BB
+
+- https://github.com/SamuelMasters/play-store, 
+- https://github.com/rachel-o-donnell/black_and_white_beauty
+- https://github.com/LauraMayock/Leather-works-sustainable-products
+- https://github.com/KSheridan86/project-5-RossAnthonyDesigns
+- https://github.com/Iris-Smok/JoyfulBookstore-PP5
+- https://github.com/rachel-o-donnell/the-witchs-cauldron
+- https://github.com/MinuMThomas/pp4-BB
+
 README structure and deployment steps are from
-https://github.com/MinuMThomas/pp4-BB
-https://github.com/KSheridan86/project-5-RossAnthonyDesigns
-https://github.com/rachel-o-donnell/black_and_white_beauty
+
+- https://github.com/MinuMThomas/pp4-BB, 
+- https://github.com/KSheridan86/project-5-RossAnthonyDesigns, 
+- https://github.com/rachel-o-donnell/black_and_white_beauty
 
 
 
@@ -437,9 +401,6 @@ The policy was generated from:
 
 #### Packages Used
 
-* VS Code & Gitpod was used to develop the site
-* Git was utilised for version control and transferring files between the code editor and the repository
-* GitHub was utilised for storing the files for this project
 
 #### Resources Used
 
@@ -692,7 +653,7 @@ class MediaStorage(S3Boto3Storage):
 ## Acknowledgements
 
 I would like to express my gratitude for the assistance and support provided by my colleagues especially Ivette and my mentor Daisy. 
-I cannot overlook the immense help from my wonderful kids, who have been understanding and supportive throughout the day, making my work easier. This achievement would not have been possible without them.
+I cannot underestimate the invaluable help I received from my wonderful kids, particularly my son Joe, and my daughters, Miriam and Mia. They have been incredibly understanding and supportive throughout the day, which made my work much easier. This achievement would not have been possible without their unwavering support
 
 -----
 
