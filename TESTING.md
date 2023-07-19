@@ -1,10 +1,10 @@
 # **Live Plants**
 
-![amiresponsive mock-ups](./docs/responsive.png)
+![Responsive image](./readme_images/responsive_img.png)
 
 <br/>
 
-**[Link to the Deployed Site]()**
+**[Link to the Deployed Site](https://8000-minumthomas-pp5-a2cr1q16wq3.ws-eu101.gitpod.io/)**
 
 ---
 ## TABLE OF CONTENTS
@@ -35,21 +35,19 @@ Dev tools were used to ensure responsiveness while in development but the site c
 | Add Item | PASS |
 | Edit Item | PASS |
 | Delete Item | PASS |
-| Categories page | PASS |
+| Categories  | PASS |
 | Register | PASS |
 | Loggout | PASS |
 | Login | PASS |
 | My Profile page | PASS |
-| ORDER CONFIRMATION PAGE | PASS |
-| Enquiries.html | PASS | 
+| Order confirmation page | PASS |
 | edit item | PASS |
 | Home page | PASS |
 | Login page | PASS |
 | Loggout page | PASS |
 | Register page | PASS |
 | Password reset | PASS |
-| CART.HTML WITH ITEMS | PASS |
-| CART EMPTY HTML | PASS |
+| Cart       | PASS |
 | Items page | PASS |
 | Items detail page | PASS |
 | Store Management page | PASS |
@@ -57,22 +55,13 @@ Dev tools were used to ensure responsiveness while in development but the site c
 | Delete Items page | PASS |
 | Blog page | PASS |
 | Blog detail page | PAS |
-| Contact.html | PASS |
-| Enquiries.html | PASS |
-| Faq page | PASS |
-| add Faq page | PASS |
-| edit Faq page | PASS |
-| delete FAq page | PASS |
-| see reviews page (1 review )| PASS |
-| see reviews page ( more than 1 review )| PASS |
+| Contact Form     | PASS |
+| see reviews page | PASS |
 | no reviews page | PASS |
-| add reviews page with image | PASS |
-| add reviews page without image | PASS |
-| delete reviews page | PASS |
+| add reviews page  | PASS |
 | My Profile page | PASS |
 | Past order detail | PASS |
 | Add item to cart with checkout pop up with items in the toast | PASS | 
-| Cart | PASS |
 | Checkout | PASS |
 | Order confirmation page | PASS |
 | 500 | PASS | 
@@ -86,7 +75,7 @@ Dev tools were used to ensure responsiveness while in development but the site c
 Wc3 HTML: All pages pass without error * all pages tested but screenshots are no different so chose to only add one
 
 
-![Html](./docs/html/Screenshot%202023-05-31%20at%2009.50.27.png)
+![Html](./readme_images/html.png)
 
 | Testing | Results |
 |--------|---------|
@@ -104,17 +93,9 @@ Wc3 HTML: All pages pass without error * all pages tested but screenshots are no
 | Delete Items page | PASS |
 | Blog page | PASS |
 | Blog detail page | PASS |
-| Contact.html | PASS |
-| Faq page | PASS |
-| add Faq page | PASS |
-| edit Faq page | PASS |
-| delete FAq page | PASS |
+| Contact form     | PASS |
 | see reviews page (1 review )| PASS |
-| see reviews page ( more than 1 review )| PASS |
 | no reviews page | PASS |
-| add reviews page with image | PASS |
-| add reviews page without image | PASS |
-| delete reviews page | PASS |
 | My Profile page | PASS |
 | Past order detail | PASS |
 | Add item to cart with checkout pop up with items in the toast | PASS |
@@ -131,7 +112,7 @@ Wc3 HTML: All pages pass without error * all pages tested but screenshots are no
 Jigsaw Wc3 validation - passes without error * all pages tested but screenshots are no different so chose to only add one
 &nbsp;
 
-![CSS](./docs/css/Screenshot%202023-05-31%20at%2011.43.09.png)
+![CSS](./readme_images/css.png)
 | Testing | Results |
 |--------|---------|
 | Base.css | PASS |
@@ -144,23 +125,23 @@ Jigsaw Wc3 validation - passes without error * all pages tested but screenshots 
 # JAvascript - JShint 
 
 The only two errors came from JAvacript taken from Stripe and Mailchimp. I decided not to alter in case it broke the functionalities of either feature
-[Jshint](./docs/jshint)
+[Jshint]()
 
 
-| Testing | Results | image |
+| Testing | Results | |
 |--------|---------|---------|
-| CART.HTML | PASS | [cart.html-js](./docs/jshint/cart.html-js.png) |
-| Contact_form.html | PASS | [contact_formjs](./docs/jshint/contact_formjs.png) |
-| Enquiries.html | PASS | [enquiries.htmljs](./docs/jshint/enquiries.htmljs.png) |
-| Add_item.html | PASS | [add_item](./docs/jshint/add_itemjs.png)
-| Edit_Item.html | PASS | [edit_itemjs](./docs/jshint/edit_itemjs.png)|
-| Items.html (1) | PASS | [items.htmljs](./docs/jshint/items.htmljs.png) |
-| Items- quantity-input.html | PASS | [qty-input-scripjs-items](./docs/jshint/qty-input-scripjs-items.png) |
+| CART.HTML | PASS | |
+| Contact_form.html | PASS |  |
+| Enquiries.html | PASS | |
+| Add_item.html | PASS | 
+| Edit_Item.html | PASS | 
+| Items.html (1) | PASS | 
+| Items- quantity-input.html | PASS |
 | Blog.html | PASS | []() 
-| countryfield/js profiles | PASS | [countryfield.js-profiles](./docs/jshint/countryfield.js-profiles.png) |
-| add_review.html | PASS | [add_review](./docs/jshint/add-review.html-js.png)
-| Base.html toasts | PASS | [base.html-toast-js](./docs/jshint/base.html-toast-js.png) |
-| allauth email.html | PASS | [allauth-email](./docs/jshint/allauth-email.html-js.png) |
+| countryfield/js profiles | PASS |
+| add_review.html | PASS | 
+| Base.html toasts | PASS |
+| allauth email.html | PASS |
 | Checkout/js/stripe_elements.js | Error coming from Stripe |[Stripe-js](./docs/jshint/Stripe-js.png) [stripe-elements-js](./docs/jshint/stripe-elements-js.png) |
 | Base.html MAilchimp | Errors - see image |[mailchimp-js-errors](./docs/jshint/mailchimp-js-errors.png) |
 
@@ -170,26 +151,18 @@ The only two errors came from JAvacript taken from Stripe and Mailchimp. I decid
 Pycodestyle used as linter in terminal
 
 Pep8CI - all files pass without error and can be found here
-[python validation images](./docs/python-validation/)
-Flake8 was also used in the terminal and there are some false positive problems and the e ones that I chose not to change
-[python validation images](./docs/python-validation/flake8.png)
+[python validation images]()
 
 
-
-&nbsp;
 
 
 &nbsp;
 
-## Manual Testing
-### Testing User Stories
-### **User Stories**
 
+&nbsp;
 
 ------
 # Manual Testing
-
-### Methodology
 
 Manual tests were applied as I was building features to ensure all features added were as fully finished as needed at their respective stages. Any bugs found were either dealt with immediately or noted in READme for future fixing. Validators of affected/changed files /pages were rechecked after each bug fix after initial validation had begun
 
@@ -208,8 +181,6 @@ Manual tests were applied as I was building features to ensure all features adde
 | Items | Items dropdown features a list of categories | Clicked Categories button | PASS | PASS |
 | Categories | Clicking the categories links will bring you to a page with all items relating to that category | Clicked all categories, each time the page rendered Items that had been tagged with that category | PASS | PASS |
 | Blog | Clicking the Blog links will bring you to a page with all blogs content| CLicked link and the page rendered the blog | PASS | PASS |
-| account icon | Gives a list of options to the user and added options to admin | Clicked Account icon as user | PASS | PASS |
-|||Clicked Account icon as admin | PASS |  PASS |
 | Log In | Sign In takes you to a sign in page |  Clicked Sign In | PASS | PASS |
 | Register | Register takes you to a register page |  Clicked Register in Nabvar | PASS | PASS |
 | Register Confirm email | Registering send a real email with a link to confirm your email | Registered as a new user using 10minutemail.com | PASS | PASS | 
@@ -217,8 +188,6 @@ Manual tests were applied as I was building features to ensure all features adde
 | My Profile | Brings user to their profile page| Clicked my profile | PASS | PASS |
 |ADMIN EXRAS |
 | Store Management | clicking this brings you to add an item page | Clicked link| PASS | PASS |
-| Enquiries | clicking this brings admin to view all the enquires people have made from the contact form | Clicked link| PASS | PASS |
-| FAQ | clicking this brings you to add a FAQ page | Clicked link| PASS | PASS |
 | Cart icon | clicking this brings you to the cart page | Clicked link | PASS | PASS |
 | Cart amount| Adding items to your cart displays value on the navbar | added items to cart | PASS | PASS |
 | TOAST MESSAGES |
@@ -255,9 +224,8 @@ Manual tests were applied as I was building features to ensure all features adde
 #### ITEMS DETAIL PAGE
 | Testing | Expected Outcome | Steps | Hover | Results |
 |--------|---------|---------|---------|---------|
-| extra info displayed | - |  - |  - | PASS|
 | reviews button | clicking renders reviews page | clicked | PASS | PASS |
-| Item in stock | Item in stock, add to bag and qty button displays, dispatch est is next day |  updated item to in stock | - | PASS |
+| Item in stock | Item in stock, add to bag and qty button displays,  |  | - | PASS |
 | Item out of stock | Item out of stock, add to bag and qty button disappear - contact button displayed |  updated item to out of stock | PASS | PASS |
 | add reviews button | Pressing add review renders the review form | pressed the add review button | PASS | PASS |
 | Quantity button | add and minus buttons work | pressed plus and minus buttons | PASS | PASS |
@@ -301,9 +269,9 @@ Manual tests were applied as I was building features to ensure all features adde
 #### BLOG DETAIL PAGE
 | Testing | Expected Outcome | Steps | Hover | Results |
 |--------|---------|---------|---------|---------|
-| Displays extra info | - | - | - | PASS | 
+| Displays Blog info | - | - | - | PASS | 
 | Continue shopping | Clicking brings you back to all items page | Clicked | PASS | PASS 
-| Contact Us | Clicking link opens the contact form page | clicked link |  PASS | PASS |
+| Back to Blog| Clicking link opens the Blog list page | clicked link |  PASS | PASS |
 
 &nbsp;
 
@@ -330,9 +298,9 @@ Manual tests were applied as I was building features to ensure all features adde
 #### CART
 | Testing | Expected Outcome | Steps | Hover | Results |
 |--------|---------|---------|---------|---------|
-| CART EMPTY |
+| Cart Empty |
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
-| CART WITH ITEMS |
+|Caet with items |
 | Items displayed | - | - | - | PASS | 
 | Quantity button | add and minus buttons work | pressed plus and minus buttons | PASS | PASS |
 | Quantity button disabled | minus button disables when item is at 1 , plus disable when items are at 98 | pressed plus and minus buttons | PASS | PASS |
@@ -463,7 +431,7 @@ Manual tests were applied as I was building features to ensure all features adde
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
 | 500 | 500 Error page appears when there is a server error | Unable to test server error | - | - |
 | Continue shopping | clicking brings to all items page | clicked button | PASS | - |
-| 403 | 403 Error page appears when user tries to access a page they are not allowed | Added faqs/edit_faq/1 to end of hhtp address when signed in as as regular user  | - | PASS |
+| 403 | 403 Error page appears when user tries to access a page they are not allowed | address when signed in as as regular user  | - | PASS |
 | Continue shopping | clicking brings to all items page | clicked button | PASS | PASS |
 
 &nbsp;
@@ -473,7 +441,7 @@ Manual tests were applied as I was building features to ensure all features adde
 |--------|---------|---------|---------|---------|
 | Facebook link | Clicking facebook link opens the respective page in a new tab, | Clicked each icon | PASS | PASS | PASS |
 | Contact Us | Clicking link opens the contact form page | clicked link |  PASS | PASS |
-| privacy policy | Clicking link opens the FAQ page | clicked link | PASS | PASS |
+| privacy policy | Clicking link opens the privacy policy external page link | clicked link | PASS | PASS |
 | Mailchimp | Subscribing should add you to mailchimp email | added email and clicked subscribe , checked if the mailchimp user number increased | PASS | PASS |
 | Footer Logo | Footer Logo link brings you to the home page | Clicked footer logo | PASS | PASS |
 

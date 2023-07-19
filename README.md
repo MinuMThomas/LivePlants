@@ -342,6 +342,98 @@ Please refer to [TESTING.md](./TESTING.md) file for:
     * HTML was used as the base language for the templates created for the site.
 * Stripe
     * Stripe was used to allow the store to accept card payments.
+* AWS
+    * Amazone web servises used to store images and static files
+
+
+# **TECHNOLOGIES USED**
+## **Languages Used**
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the content and structure of the site.
+* [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
+* [Python](https://www.python.org/) was used for the back end programming of the site.
+## Frameworks Used
+* [DJANGO - v3.2 ](https://docs.djangoproject.com/en/4.1/releases/3.2/) Django is a free and open-source, Python-based web  framework that follows the model–template–views architectural pattern.
+* [Bootstrap4 - v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) was used as the frontend framework.
+## Databases Used
+* [DB.SQLITE3](https://docs.djangoproject.com/en/4.1/ref/databases/#sqlite-notes) was the database used for the project (development).
+* [ElephantSQL](https://www.elephantsql.com/) ElephantSQL's Postgres as a Service was used to host the the database for the project (production).
+## **Libraries and Packages Used**
+* [django-allauth](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication.
+* [JQuery - v3.5.1](https://jquery.com/) is a fast, small, and feature-rich JavaScript library.
+* [Font Awesome Kit](https://fontawesome.com/v5/docs/web/setup/use-kit) is used for its icon toolkit.
+* [django-countries, v7.2.1](https://pypi.org/project/django-countries/7.2.1/) was the Django application used to provide country choices for use with forms, and a country field for models.
+* [django-crispy-forms, v1.14.0](https://pypi.org/project/django-crispy-forms/) was used to build programmatic reusable layouts out of form components.
+* [gunicorn](https://gunicorn.org/) - a Python WSGI HTTP Server that allows us to run any Python application concurrently by running multiple processes within a single dyno
+* [pillow](https://pypi.org/project/Pillow/) - a required Python imaging library used to enable handling of images.
+* [psycopg2](https://pypi.org/project/psycopg2/) - a postgresql database adapter for python and used to connect with our postgres database
+* [boto3==1.26.27](https://pypi.org/project/boto3/), [botocore==1.29.27] is an Amazon Web Services (AWS) software development kit (SDK) used to connect to the S3 bucket
+* [pip](https://pip.pypa.io/en/stable/) is the package installer for Python, allowing us to install the packages we need for this site.
+* [django storages](https://django-storages.readthedocs.io/en/latest/) - collection of custom storage backends for Django
+
+## **Programmes and Applications Used**
+* [Lucid Chart](https://www.lucidchart.com/pages/) was used to draw and build the Entity Relationship Diagram. It was also used to draw the User Flow Diagram.
+* [favicon.io](https://favicon.io/) used to create the site's favicon
+* [Git](https://git-scm.com/) used for version control and saving work in the repository, using the GitPod extension in Google Chrome to commit to GitHub.
+* [GitHub](https://github.com/) is the project's git repository
+* [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) used to track and integrate issues for Agile Development
+* [Chrome DevTools](https://www.google.com/intl/en_uk/chrome/) - used for debugging, validation (Lighthouse) and taking fullscreen screenshots of the site
+* [ezgif](https://ezgif.com/)
+
+
+## **Payment Processing Platform Used**
+* [Stripe](https://stripe.com/gb) was used to test and implement the payment processing for the site.
+
+Stripe how to test cards interactively:
+| **CARD NUMBER** | **MM &amp; YY**  | **CVC** | **SIMULATED PAYMENT RESULT** |
+| --- | --- | --- | --- |
+| 4242 4242 4242 4242 | use any valid future month and year | use any three digit CVC | successful payment |
+| 4000 0000 0000 0002 | use any valid future month and year | use any three digit CVC | generic decline |
+
+## **Cloud Application Platforms Used**
+* [Heroku](https://devcenter.heroku.com/) was used for hosting and deployment of the live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
+
+## **Cloud Storage Services Used**
+* [AWS S3](https://aws.amazon.com/) was used to store the images and static files.
+---
+
+# **TESTING**
+Please refer to [TESTING.md](./TESTING.md) file for:
+* Manual Testing and Results
+* Validation of all languages
+* Lighthouse scores
+
+<br/>
+
+
+
+# **CREDITS**
+## **Code** 
+
+: The project very much got its start from Code Institutes walkthrough project
+
+PROJECTS I looked through for inspiration and problem solving
+https://github.com/SamuelMasters/play-store
+https://github.com/rachel-o-donnell/black_and_white_beauty
+https://github.com/LauraMayock/Leather-works-sustainable-products
+https://github.com/KSheridan86/project-5-RossAnthonyDesigns
+https://github.com/Iris-Smok/JoyfulBookstore-PP5
+https://github.com/rachel-o-donnell/the-witchs-cauldron
+https://github.com/MinuMThomas/pp4-BB
+README structure and deployment steps are from
+https://github.com/MinuMThomas/pp4-BB
+https://github.com/KSheridan86/project-5-RossAnthonyDesigns
+https://github.com/rachel-o-donnell/black_and_white_beauty
+
+
+
+* [ Favicon ](https://realfavicongenerator.net/)
+
+## **Content**
+
+
+The policy was generated from:
+* [Privacy Policy Generator ](https://www.privacypolicygenerator.info/download.php?lang=en&token=2YTFAh7Aa8GDO5knKT5gJ2WAr7mS9EG2)
 
 #### Packages Used
 
@@ -370,35 +462,51 @@ The site was deployed via Heroku, and the live link can be found here - [Live Pl
 To deploy the project through Heroku I followed these steps:
 * Sign up / Log in to [Heroku](https://www.heroku.com/)
 * From the main Heroku Dashboard page select 'New' and then 'Create New App'
-* Give the project a name - I entered RossAnthonyDesigns and select a suitable region, then select create app. The name for the app must be unique.
+* Give the project a name 
 * This will create the app within Heroku and bring you to the deploy tab. From the submenu at the top, navigate to the resources tab.
-* Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database
-* Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
-* Within the django app repository create a new file called env.py - within this file import the os library and set the environment variable for the DATABASE_URL pasting in the address copied from Heroku. The line should appear as os.environ["DATABASE_URL"]= "Paste the link in here"
-* Add a secret key to the app using os.environ["SECRET_KEY"] = "your secret key goes here"
-* Add the secret key just created to the Heroku Config Vars as SECRET_KEY for the KEY value and the secret key value you created as the VALUE
-* In the settings.py file within the django app, import Path from pathlib, import os and import dj_database_url
-* insert the line if os.path.isfile("env.py"): import env
-* remove the insecure secret key that django has in the settings file by default and replace it with SECRET_KEY = os.environ.get('SECRET_KEY')
-* replace the databases section with DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))} ensure the correct indentation for python is used.
-* In the terminal migrate the models over to the new database connection
+* Add the database to the app, 
+* Create Database in ElephantSOL
+- Follow the steps to Create PostgreSQL database instance
+- Login/signup to ElephantSQL.com to access your dashboard
+- Click “Create New Instance”
+- Select the Tiny Turtle (Free) plan
+- Select “Select Region” 
+- Select a data center near you
+- Then click “Review”
+- Check your details are correct and then click “Create instance” 
+- Return to the ElephantSQL dashboard and click on the database instance name for this project
+- That’s the database created
+- In the URL section, click the copy icon to copy the database URL
+- Go back to the Heroku dashboard open the Settings tab add two config vars:
+- DATABASE_URL, and for the value, copy in your database URL from ElephantSQL, no need to add quotation 
+  marks.
+- SECRET_KEY containing your secret key.
+- Added the secret key to the Heroku Config Vars as "SECRET_KEY" for the KEY value and the secret key 
+  value created as the VALUE.
+- In the settings.py file within the Django app, imported Path from pathlib, os, and dj_database_url.
+- Inserted the line if os.path.isfile("env.py"): import env to import the env.py file if it exists.
+- Removed the insecure default secret key in the settings file and replaced it with SECRET_KEY = os.
+  environ.get('SECRET_KEY').
+- Replaced the databases section with DATABASES = {'default': dj_database_url.parse(os.environ.get
+  ("DATABASE_URL"))}.
+- Migrated the models to the new database connection in the termina
 
 * Set up Amazon Web Services' S3 to host our static files and images**
 **Create an account** <br/>
-* Create an AWS Account by going to [aws.amazon.com](https://aws.amazon.com/) and click on *create an aws account* by filling in your email and a password and choose a username for the account and select *continue*
-* On the account type, select *personal*, fill out the required information, and click *create account and continue*
-* Enter the credit card number which will be used for billing if the account goes above the free usage limits
-* Complete the verification and once you confirm all the required information, your account will be created.
+- Create an AWS Account by going to [aws.amazon.com](https://aws.amazon.com/) and click on *create an aws account* by filling in your email and a password and choose a username for the account and select *continue*
+- On the account type, select *personal*, fill out the required information, and click *create account and continue*
+- Enter the credit card number which will be used for billing if the account goes above the free usage limits
+- Complete the verification and once you confirm all the required information, your account will be created.
 **Create a bucket**
-* Once your signed in to your account, find S3 using the search bar, select and navigate to S3 to create a new bucket which will be used to store your static and media files
-* Click the *create bucket* button and on the General configuration section, add the name of your bucket. It is a good idea to name the bucket the same as your project to keep your buckets organized and clear
-* Select the region closest to you
-* On the Object Ownership section, select *ACLs enabled* and a bucket ownership dropdown will appear, select *Bucket owner preferred*
-* On the Block Public Access settings for this bucket section, uncheck *Block all public access*, check the *I acknowledge that the current settings might result in this bucket and the objects within becoming public* checkbox to make the bucket public and click *create bucket*
-* Click the bucket you created and select the *properties* tab. Scroll down to find the *static web hosting* section and select *enable static web hosting*, tick *host a static website* and add *index.html* and *error.html* to the input fields for **Index document** and **Error document** respectively and click *save*.
-* Open the permissions tab and copy the ARN (Amazon Resource Name). Navigate to the bucket policy section, click *edit* and select *policy generator*. From the *Select Type Policy* dropdown options, select S3 bucket policy. We want to allow all principal by adding the `*` to the input and the from the *Actions* dropdown, select *GetObject*.
-* Paste the ARN we copied into the ARN (Amazon Resource Name) input field and click *add statement*, then click *generate policy*, copy the Policy from the new popup and paste it into the bucket policy editor and add `/*` at the end of the resource value to allow access to all resources in this policy and finally, click *save*.
-* AWS has changed the format of their **cross-origin resource sharing (CORS)** configuration so we need to paste the update code below to the CORS section:
+- Once your signed in to your account, find S3 using the search bar, select and navigate to S3 to create a new bucket which will be used to store your static and media files
+- Click the *create bucket* button and on the General configuration section, add the name of your bucket. It is a good idea to name the bucket the same as your project to keep your buckets organized and clear
+- Select the region closest to you
+- On the Object Ownership section, select *ACLs enabled* and a bucket ownership dropdown will appear, select *Bucket owner preferred*
+- On the Block Public Access settings for this bucket section, uncheck *Block all public access*, check the *I acknowledge that the current settings might result in this bucket and the objects within becoming public* checkbox to make the bucket public and click *create bucket*
+- Click the bucket you created and select the *properties* tab. Scroll down to find the *static web hosting* section and select *enable static web hosting*, tick *host a static website* and add *index.html* and *error.html* to the input fields for **Index document** and **Error document** respectively and click *save*.
+- Open the permissions tab and copy the ARN (Amazon Resource Name). Navigate to the bucket policy section, click *edit* and select *policy generator*. From the *Select Type Policy* dropdown options, select S3 bucket policy. We want to allow all principal by adding the `*` to the input and the from the *Actions* dropdown, select *GetObject*.
+- Paste the ARN we copied into the ARN (Amazon Resource Name) input field and click *add statement*, then click *generate policy*, copy the Policy from the new popup and paste it into the bucket policy editor and add `/*` at the end of the resource value to allow access to all resources in this policy and finally, click *save*.
+- AWS has changed the format of their **cross-origin resource sharing (CORS)** configuration so we need to paste the update code below to the CORS section:
 ```json
 [
   {
@@ -415,15 +523,15 @@ To deploy the project through Heroku I followed these steps:
   }
 ]
 ```
-* For the **Access control list (ACL)** section, click *edit* and tick *List* for **Everyone (public access)** and accept the warning box. If the edit button is disabled you need to change the **Object Ownership** section above to **ACLs enabled**.
+- For the **Access control list (ACL)** section, click *edit* and tick *List* for **Everyone (public access)** and accept the warning box. If the edit button is disabled you need to change the **Object Ownership** section above to **ACLs enabled**.
 
 **Create Group, Policies and Users using AWS's Identity and Access Management (IAM) service**<br/>
-* Find IAM using the search bar, select and navigate to IAM to create a group, create an access policy to give the group access to the S3 bucket and assign the user to the group so it can use the policy to access the files.
-* Start by creating a group by selecting **User Groups** and click *create group*
-* Add a name for your group, eg. manage-black-and-white-beauty, then click *create policy* button
-* Open the *JSON* tab on the new page and click the *import managed policy* link on the top right side of the page
-* Search for S3 and select the pre-built *AmazonS3FullAccess* policy and click *import*
-* Edit the policy by pasting the S3 ARN on *resource*, ie:
+- Find IAM using the search bar, select and navigate to IAM to create a group, create an access policy to give the group access to the S3 bucket and assign the user to the group so it can use the policy to access the files.
+ Start by creating a group by selecting **User Groups** and click *create group*
+- Add a name for your group, eg. manage-black-and-white-beauty, then click *create policy* button
+- Open the *JSON* tab on the new page and click the *import managed policy* link on the top right side of the page
+- Search for S3 and select the pre-built *AmazonS3FullAccess* policy and click *import*
+- Edit the policy by pasting the S3 ARN on *resource*, ie:
 ```json
 {
     "Version": "2012-10-17",
@@ -439,24 +547,24 @@ To deploy the project through Heroku I followed these steps:
     ]
 }
 ```
-* Click the *next* button and then *next: review*
-* Give the policy a name, description then click the *create policy* button
-* Next we need to attach to the Group the policy we just created. Go to *User Groups*, select the group and go to the permissions tab, click the *add permissions* button and select *attach policies* from the dropdown.
-* Select the Policy you created and click *add permissions*
-* We have to create a user for the group. Click *Users* from the left sidebar and then click the *add users* button and add a name for the user, eg. black-and-white-staticfiles-user
-* Next tick *programmatic access* from Access Type and click *next: permissions*
-* Add user to the group and click *next: tags*, *next: review* and then the *create user* button.
-* The download the .csv file which will contain this user's access key and secret access key which we'll use to authenticate them from our Django app.
+- Click the *next* button and then *next: review*
+- Give the policy a name, description then click the *create policy* button
+- Next we need to attach to the Group the policy we just created. Go to *User Groups*, select the group and go to the permissions tab, click the *add permissions* button and select *attach policies* from the dropdown.
+- Select the Policy you created and click *add permissions*
+- We have to create a user for the group. Click *Users* from the left sidebar and then click the *add users* button and add a name for the user, eg. black-and-white-staticfiles-user
+- Next tick *programmatic access* from Access Type and click *next: permissions*
+- Add user to the group and click *next: tags*, *next: review* and then the *create user* button.
+- The download the .csv file which will contain this user's access key and secret access key which we'll use to authenticate them from our Django app.
 
 **10. Connecting Django to S3**
-* Install two new packages: **boto3** and **django-storages**
+- Install two new packages: **boto3** and **django-storages**
 ```bash
 pip3 install boto3
 pip3 install django-storages
 pip3 freeze > requirements.txt
 ```
-* Add `storages` to the installed apps in **settings.py**
-* Also on **settings.py**, add the bucket configuration:
+- Add `storages` to the installed apps in **settings.py**
+- Also on **settings.py**, add the bucket configuration:
 ```python
     if 'USE_AWS' in os.environ:
         AWS_S3_OBJECT_PARAMETERS = {
@@ -470,14 +578,14 @@ pip3 freeze > requirements.txt
         AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
         AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 ```
-* Open the .csv file we downloaded earlier and go to Heroku app dashboard and add these to Config Vars:
+- Open the .csv file we downloaded earlier and go to Heroku app dashboard and add these to Config Vars:
 | Key | Value |
 | :-- | :-- |
 | AWS_ACCESS_KEY_ID | The access key value from the .csv file |
 | AWS_SECRET_ACCESS_KEY | The secret access key value from the .csv file |
 | USE_AWS | True |
-* Remove **COLLECTSTATIC** variable from the Config Vars
-* Create **custom_storages.py** file and add:
+- Remove **COLLECTSTATIC** variable from the Config Vars
+- Create **custom_storages.py** file and add:
 ```python
 from django.conf import settings
 from storages.backends.s3boto3 import S3Boto3Storage
@@ -490,7 +598,7 @@ class StaticStorage(S3Boto3Storage):
 class MediaStorage(S3Boto3Storage):
     location = settings.MEDIAFILES_LOCATION
 ```
-* Next, go back to **settings.py** file and tell it that for static file storage, we want to use our storage class we just created and that the location it should save static files us a folder called static. And then do the same thing for media files using the default file storage and media files location settings.
+- Next, go back to **settings.py** file and tell it that for static file storage, we want to use our storage class we just created and that the location it should save static files us a folder called static. And then do the same thing for media files using the default file storage and media files location settings.
 ```python
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
@@ -498,29 +606,29 @@ class MediaStorage(S3Boto3Storage):
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 ```
-* We also need to override and explicitly set the URLs for static and media files using our custom domain and the new locations:
+- We also need to override and explicitly set the URLs for static and media files using our custom domain and the new locations:
 ```python
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 ```
-* Next, save the **settings.py** file, add all these changes, commit them and then issue a git push which will trigger an automatic deployment to Heroku. With that done if we look at the build log. We can see that all the static files were collected successfully
-* To handle the media files, Let's go to s3 and create a new folder called media then click *upload*. Add the product images files, click *next* and under manage public permissions, select *grant public read access to these objects.* Then click *next* through to the end and finally, click *upload*.
+- Next, save the **settings.py** file, add all these changes, commit them and then issue a git push which will trigger an automatic deployment to Heroku. With that done if we look at the build log. We can see that all the static files were collected successfully
+- To handle the media files, Let's go to s3 and create a new folder called media then click *upload*. Add the product images files, click *next* and under manage public permissions, select *grant public read access to these objects.* Then click *next* through to the end and finally, click *upload*.
 
 11. Setting  up Stripe
-* Log in to Stripe, click the *developers* link, and then *API Keys*
-* Add them as Config Vars in Heroku
-* Now we need to create a new webhook endpoint since the current one is sending webhooks to our gitpod workspace. We can do that by going to webhooks in the developer's menu and clicking *add endpoint*.
-* Add the URL for our Heroku app, followed by /checkout/WH and select *receive all events and add endpoint*.
-* We can now reveal our webhooks signing secret and add that to our Heroku config variables.
+- Log in to Stripe, click the *developers* link, and then *API Keys*
+- Add them as Config Vars in Heroku
+- Now we need to create a new webhook endpoint since the current one is sending webhooks to our gitpod workspace. We can do that by going to webhooks in the developer's menu and clicking *add endpoint*.
+- Add the URL for our Heroku app, followed by /checkout/WH and select *receive all events and add endpoint*.
+- We can now reveal our webhooks signing secret and add that to our Heroku config variables.
 
 
-* In your code editor, create three new top level folders, media, static, templates
-* Create a new file on the top level directory - Procfile
-* Within the Procfile add the code - web: gunicorn PROJECT_NAME.wsgi
-* In the terminal, add the changed files, commit and push to GitHub
-* In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors.
-* Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
+- In your code editor, create three new top level folders, media, static, templates
+- Create a new file on the top level directory - Procfile
+- Within the Procfile add the code - web: gunicorn PROJECT_NAME.wsgi
+- In the terminal, add the changed files, commit and push to GitHub
+- In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors.
+- Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
 
 
 #### Forking the repository
@@ -562,9 +670,10 @@ class MediaStorage(S3Boto3Storage):
 #### Resources Used
 
 * The Django documentation was used extensively during development of this project
-* The Cloudinary documentation was used.
+* The AWS and STRIPE documentations were used.
 * The Code Institute reference material was used as a general reference 
-* The Django walk through project 'I think before I Blog'
+* The Django walk through project 'Boutique Ado'
+* Myown project [PP4-BB](https://github.com/MinuMThomas/pp4-BB) 
 
 
 
@@ -576,14 +685,14 @@ class MediaStorage(S3Boto3Storage):
 - Logo created from free logomaker site [site](https://myfreelogomaker.com/)
 
 - I relied on the  Django walk through projects mostly.
-    Further research was done by building walk through projects available freely on youtube and especially pyplane [youtube page](https://www.youtube.com/playlist?list=PLgjw1dR712joFJvX_WKIuglbR1SNCeno1) 
+    Further research was done by building walk through projects available freely on youtube and especially pyplane [youtube page](https://www.youtube.com/@Pyplane/videos) 
 
 -----
 
 ## Acknowledgements
 
-I would like to express my gratitude for the assistance and support provided by my colleagues and mentor. 
-Additionally, I cannot overlook the immense help from my wonderful kids, who have been understanding and supportive throughout the day, making my work easier. This achievement would not have been possible without them.
+I would like to express my gratitude for the assistance and support provided by my colleagues especially Ivette and my mentor Daisy. 
+I cannot overlook the immense help from my wonderful kids, who have been understanding and supportive throughout the day, making my work easier. This achievement would not have been possible without them.
 
 -----
 
