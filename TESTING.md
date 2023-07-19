@@ -151,7 +151,7 @@ The only two errors came from JAvacript taken from Stripe and Mailchimp. I decid
 Pycodestyle used as linter in terminal
 
 Pep8CI - all files pass without error and can be found here
-[python validation images]()
+[python validation images](./readme_images/python_test.png)
 
 
 
