@@ -239,6 +239,15 @@ a.category-badge > span.badge:hover {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+/* admin edit and delete button */
+
+.btn-edit{
+    color: rgb(7, 108, 7);
+}
+
+.btn-delete{
+    color: rgb(197, 10, 10)
+}
 
 /* Product Form */
 
