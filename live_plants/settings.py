@@ -31,6 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['liveplants-61cae3ad1da7.herokuapp.com',
                  '8000-minumthomas-pp5-a2cr1q16wq3.ws-eu101.gitpod.io',
+                 '8000-minumthomas-pp5-a2cr1q16wq3.ws-eu102.gitpod.io',
                  'localhost']
 
 

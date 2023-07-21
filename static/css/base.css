@@ -277,6 +277,7 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+
 /* footer */
 
 .footer{
@@ -395,5 +396,13 @@ a.category-badge > span.badge:hover {
     }
     #mc_embed_signup{
         width: 27em;
+    }
+
+        /* pdt detail */
+    .pdt-detail{
+        margin-top: 10em;
+    }
+    .review-msg{
+        margin-left: 5em;
     }
 }
