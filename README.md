@@ -647,7 +647,7 @@ class MediaStorage(S3Boto3Storage):
 
 ## Acknowledgements
 
-I would like to express my gratitude for the assistance and support provided by my colleagues especially Ivette and my mentor Daisy. 
+I would like to express my gratitude for the assistance and support provided by my colleagues especially Ivette and my mentor Daisy McGirr. 
 I cannot underestimate the invaluable help I received from my wonderful kids, particularly my son Joe, and my daughters, Miriam and Mia. They have been incredibly understanding and supportive throughout the day, which made my work much easier. This achievement would not have been possible without their unwavering support
 
 -----
