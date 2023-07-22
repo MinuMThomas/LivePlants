@@ -366,9 +366,25 @@ a.category-badge > span.badge:hover {
         font-size: .75rem;
     }
 
+
+    .btn.btn-custom.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty,
+    .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .quantity {
+        width: 60% !important;
+    }
+
     #bg-image{
         padding-top: 7em;
     }
