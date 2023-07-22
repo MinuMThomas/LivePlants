@@ -162,29 +162,7 @@
         <div class="container pt-3">
             <section class="footer">
                 <div class="row d-flex justify-content-between">
-                    <div>
-                        <ul class="list-inline" id="footer-list">
-                            <li>
-                                <a href="{% url 'contact:contact' %}">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="https://www.privacypolicygenerator.info/live.php?token=YSHZUauOohMIkKw63vnN49saSegPqAzX"
-                                    target="_blank">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href=" {% url 'blog:blog_list' %}">Blog</a>
-                            </li>
 
-                            <li>
-                                <a href="https://www.facebook.com/profile.php?id=100094665704253"
-                                    rel="external nofollow noopener" target="_blank">Facebook</a>
-                            </li>
-                            <li>
-                                <small>For educational purposes only.</small>
-                            </li>
-                        </ul>
-
-                    </div>
                     <!-- mailchimp -->
                     <div id="mc_embed_shell">
                         <div id="mc_embed_signup">
@@ -222,10 +200,34 @@
                         </div>
                     </div>
                     <!-- end mail chimp -->
+                    <div>
+                        <ul class="list-inline" id="footer-list">
+                            <li>
+                                <a href="{% url 'contact:contact' %}">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.privacypolicygenerator.info/live.php?token=YSHZUauOohMIkKw63vnN49saSegPqAzX"
+                                    target="_blank">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href=" {% url 'blog:blog_list' %}">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100094665704253"
+                                    rel="external nofollow noopener" target="_blank">Facebook</a>
+                            </li>
+                            <!-- <li>
+                                <small>For educational purposes only.</small>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- last footer -->
                 </div>
-
-
             </section>
+        </div>
+        <div class="text-center">
+            <small>© 2023 Copyright: For educational purposes only.</small>
         </div>
     </footer>
 </div>
