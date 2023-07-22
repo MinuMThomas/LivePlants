@@ -363,7 +363,7 @@ Stripe how to test cards interactively:
 
 
 
-## CREDITS
+## Resources Used
 ### Code
 
 The project very much got its start from Code Institutes walkthrough project Boutique Ado
@@ -387,8 +387,6 @@ README structure was adapted from the projects listed below, with some additions
 
 
 
-* [ Favicon ](https://realfavicongenerator.net/)
-
 ## **Content**
 
 
@@ -397,13 +395,7 @@ The policy was generated from:
 
 #### Packages Used
 
-
-#### Resources Used
-
-* The Django documentation was used extensively during development of this project
-* The Cloudinary documentation was used.
-* The Code Institute reference material was used as a general reference for things that I had previously done during the course.
-* All other resources used are referenced where appropriate.
+* [ Favicon ](https://realfavicongenerator.net/)
 
 
 [Back to the Top](#table-of-contents)
