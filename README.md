@@ -368,17 +368,18 @@ Stripe how to test cards interactively:
 
 The project very much got its start from Code Institutes walkthrough project Boutique Ado
 
-PROJECTS I looked through for inspiration and problem solving
+PROJECTS I looked through for inspiration and problem solving:
 
+- https://github.com/MinuMThomas/pp4-BB
 - https://github.com/SamuelMasters/play-store, 
 - https://github.com/rachel-o-donnell/black_and_white_beauty
 - https://github.com/LauraMayock/Leather-works-sustainable-products
 - https://github.com/KSheridan86/project-5-RossAnthonyDesigns
 - https://github.com/Iris-Smok/JoyfulBookstore-PP5
 - https://github.com/rachel-o-donnell/the-witchs-cauldron
-- https://github.com/MinuMThomas/pp4-BB
 
-README structure and deployment steps are from
+
+README structure was adapted from the projects listed below, with some additions and amendments made by myself:
 
 - https://github.com/MinuMThomas/pp4-BB, 
 - https://github.com/KSheridan86/project-5-RossAnthonyDesigns, 
@@ -648,6 +649,7 @@ class MediaStorage(S3Boto3Storage):
 ## Acknowledgements
 
 I would like to express my gratitude for the assistance and support provided by my colleagues especially Ivette and my mentor Daisy McGirr. 
+
 I cannot underestimate the invaluable help I received from my wonderful kids, particularly my son Joe, and my daughters, Miriam and Mia. They have been incredibly understanding and supportive throughout the day, which made my work much easier. This achievement would not have been possible without their unwavering support
 
 -----
