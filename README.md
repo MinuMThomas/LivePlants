@@ -193,7 +193,7 @@ The main navigation bar appears at the top of the page, clearly displaying the m
 A common footer is utilised throughout the site and including newsletter signup form from mailchimp.
 
 
-![footer](./readme_images/footer.png)
+![footer](./readme_images/footer_updated.png)
 
 
 #### Other Pages/Features
