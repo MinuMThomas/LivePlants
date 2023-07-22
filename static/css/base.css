@@ -382,6 +382,10 @@ a.category-badge > span.badge:hover {
     .logo-shop{
         padding-top: 6em;
     }
+
+    #logo-dis {
+        font-size: 30px;
+    }
     .card-img-top{
         width: 200px;
         height: auto;
