@@ -120,7 +120,7 @@ Jigsaw Wc3 validation - passes without error * all pages tested but screenshots 
 
 # JAvascript - JShint 
 
-The only two errors came from JAvacript taken from Stripe and Mailchimp. I decided not to alter in case it broke the functionalities of either feature
+I found two mistakes in the JavaScript code that I borrowed from Stripe and Mailchimp. I chose not to change them because I was worried it might cause problems with how the Stripe and Mailchimp features work.
 [Jshint]()
 
 
@@ -133,7 +133,7 @@ The only two errors came from JAvacript taken from Stripe and Mailchimp. I decid
 | Edit_Item.html | PASS | 
 | Items.html (1) | PASS | 
 | Items- quantity-input.html | PASS |
-| Blog.html | PASS | []() 
+| Blog.html | PASS |  
 | countryfield/js profiles | PASS |
 | add_review.html | PASS | 
 | Base.html toasts | PASS |
