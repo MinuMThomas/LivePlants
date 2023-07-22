@@ -24,7 +24,6 @@
 - [Deployment](#deployment)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
-- [Author Info](#author-info)
 
 ------
 
@@ -39,7 +38,7 @@ Live Plants site offers a wide selection of high-quality plants suitable for ind
 
 This website is designed as the final project for the Code Institute Diploma in Software Development course. Please note that it does not process real payments or fulfill orders. However, you are welcome to test the payment functionality using the provided card details when prompted.
 
-`Card number: 5555 5555 5555 4444  Exp: any future date eg. 11/26 CVC: any 3 digits eg 123`
+`Card number: 5555 5555 5555 4444 or 4242 4242 4242 4242  Exp: any future date eg. 11/26 CVC: any 3 digits eg 123`
 
 
 [Back to the Top](#table-of-contents)
@@ -61,7 +60,7 @@ This website is designed as the final project for the Code Institute Diploma in 
 
 These colours were used:
 
-green: #4fa680 , #397b65, #93eecaef
+ - #4fa680 , #397b65, #93eecaef
  
 
 [Back to the Top](#table-of-contents)
@@ -133,7 +132,7 @@ The link to the project board can be found [here](https://github.com/users/MinuM
     *  As a user I can easily identify the total cost of my Cart
 
 - User Feedback/Confirmation
-    *  As a user I receive prompt feedback concerning my actib=vity on the site
+    *  As a user I receive prompt feedback concerning my activity on the site
     *  As a user I can see a order confirmation message
     *  As a user I receive an order confirmation email
 
@@ -142,7 +141,7 @@ The link to the project board can be found [here](https://github.com/users/MinuM
     *  As a user I can input my credit/debit card details
 
 - User Profile
-    *  As a user I can sign in/create a profile so that I can avail of the sites full functionality ie. leave customer reviews
+    *  As a user I can sign in/create a profile so that I can avail of the sites full functionality including leave customer reviews
 
 - Contact site owner/Social links
     *  As a user I can signup to a Newsletter
@@ -218,7 +217,7 @@ A common footer is utilised throughout the site and including newsletter signup 
 
 [Individual Product Page](./readme_images/individual_pdt.png)
 
-[Reviews]()
+[Reviews](./readme_images/reviews.png)
 
 [Blog](./readme_images/Blog.png)
 
@@ -263,10 +262,7 @@ Testing was divided into different sections to ensure everything was tested indi
 #### Validator Testing
 All code files were validated using suitable validators for the specific language.
 HTML & CSS code passed the validation.
-JavaScript code produced one warning about an undefined variable but this is nothing to worry about as it is defined in another file.
-All validation screenshots are included in [TESTING.md](./TESTING.md).
-
-
+JavaScript code produced one warning about an undefined variable but this is nothing to worry about as it is defined in another file, validation screenshots are included in [TESTING.md](./TESTING.md).
 
 
 #### Lighthouse Testing
@@ -279,7 +275,6 @@ Below you can see the results of Googles Lighthouse Testing.
 #### Python/JavaScript Testing
 All Custom Python & JavaScript code was manually tested multiple times during and after development.
 This is reflected in the fact that all of the user stories below are working and have produced no errors in the terminal or the console.
-
 
 
 
@@ -452,9 +447,9 @@ To deploy the project through Heroku I followed these steps:
   ("DATABASE_URL"))}.
 - Migrated the models to the new database connection in the termina
 
-* Set up Amazon Web Services' S3 to host our static files and images**
-**Create an account** <br/>
-- Create an AWS Account by going to [aws.amazon.com](https://aws.amazon.com/) and click on *create an aws account* by filling in your email and a password and choose a username for the account and select *continue*
+* Set up Amazon Web Services' S3 to host our static files and images
+**Create an account**
+- Create an AWS Account by going to [aws.amazon.com](https://aws.amazon.com/) and click on -create an aws account- by filling in your email and a password and choose a username for the account and select *continue*
 - On the account type, select *personal*, fill out the required information, and click *create account and continue*
 - Enter the credit card number which will be used for billing if the account goes above the free usage limits
 - Complete the verification and once you confirm all the required information, your account will be created.
