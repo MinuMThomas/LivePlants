@@ -4,17 +4,15 @@
 
 <br/>
 
-**[Link to the Deployed Site](https://8000-minumthomas-pp5-a2cr1q16wq3.ws-eu101.gitpod.io/)**
+**[Link to the Deployed Site](https://8000-minumthomas-pp5-a2cr1q16wq3.ws-eu102.gitpod.io/)**
 
 ---
-## TABLE OF CONTENTS
-* [Responsivness](#responsiveness)
+
 * [Validation](#validation)
     * [HTML Validation](#html)
     * [CSS Validation](#css)
     * [JavaScript Validation](#javascript)
     * [Python Validation](#python)
-    * [Lighthouse Report](#lighthouse)
     * [Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
     * [Full Testing](#full-testing)
@@ -24,8 +22,6 @@
 
 &nbsp; 
 
-# Responsiveness 
-Dev tools were used to ensure responsiveness while in development but the site can be tested here -> [AM I Responsive ]() 
 | Testing | Results |
 |--------|---------|
 | Navbar - goes to burger | PASS |
