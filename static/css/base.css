@@ -277,10 +277,7 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
-/* mob nav bar */
-.mob-nav{
-    font-size: 10px;
-}
+
 
 /* footer */
 
@@ -384,7 +381,7 @@ a.category-badge > span.badge:hover {
     }
     
     .logo-shop{
-        padding-top: 6em;
+        padding-top: 1em;
     }
 
     #logo-dis {
@@ -395,7 +392,7 @@ a.category-badge > span.badge:hover {
         height: auto;
     }
     .review{
-        padding-top: 8em;
+        padding-top: 1em;
     }
     .footer{
         padding-left: 0.3em;
@@ -412,4 +409,10 @@ a.category-badge > span.badge:hover {
     .review-msg{
         margin-left: 5em;
     }
+
+    /* mob nav bar */
+.mob-nav{
+    font-size: 13px;
+}
+
 }
