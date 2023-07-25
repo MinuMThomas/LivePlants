@@ -277,6 +277,10 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+/* mob nav bar */
+.mob-nav{
+    font-size: 10px;
+}
 
 /* footer */
 
