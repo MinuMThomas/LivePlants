@@ -60,7 +60,10 @@ This website is designed as the final project for the Code Institute Diploma in 
 
 These colours were used:
 
- - #4fa680 , #397b65, #93eecaef
+ - rgb(200,255,238) 
+ -  -webkit-linear-gradient(#e3e623f9,#26ad70)
+ - -webkit-linear-gradient(#cfe4da, #424228f9)
+ - -webkit-linear-gradient(#41a5ed, #1ea12de0)
  
 
 [Back to the Top](#table-of-contents)
