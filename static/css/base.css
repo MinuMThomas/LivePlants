@@ -9,11 +9,11 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 80%;
 }
 
 .logo {
-    color: #4fa680;
+    color: #25bf9e;
     text-align: center;
     font-size: 40px;
     font-weight: 600;
@@ -372,7 +372,7 @@ a.category-badge > span.badge:hover {
     }
 
     #bg-image{
-        padding-top: 7em;
+        padding-top: 2em;
     }
 
 
