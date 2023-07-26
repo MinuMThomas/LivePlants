@@ -8,17 +8,39 @@ body {
     font-family: 'Roboto Slab', serif ;
 }
 
+.home-item{
+    font-size: 42px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#e3e623f9,#26ad70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .home-msg{
+    background: -webkit-linear-gradient(#cfe4da, #424228f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 img {
     width: 80%;
 }
 
 .logo {
-    color: #25bf9e;
+    background: -webkit-linear-gradient(#41a5ed, #1ea12de0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 40px;
     font-weight: 600;
     font-family: 'Roboto Slab', serif ;
     
+}
+
+.logo-shop {
+    font-size: 42px;
+    background: -webkit-linear-gradient(#41a5ed, #1ea12de0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #logo-dis {
@@ -339,6 +361,9 @@ a.category-badge > span.badge:hover {
         height: calc(100vh - 116px);
     }
 
+    .home-item{
+        font-size: 22px;
+    }
     .nav-link {
         padding: 0.15rem;
     }
@@ -382,6 +407,7 @@ a.category-badge > span.badge:hover {
     
     .logo-shop{
         padding-top: 1em;
+        font-size: 22px;
     }
 
     #logo-dis {
