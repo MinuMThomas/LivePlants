@@ -200,30 +200,43 @@ A common footer is utilised throughout the site and including newsletter signup 
 
 
 #### Other Pages/Features
+- All items shown on the page
 [Shop](./readme_images/shop.png)
 
+- Clearance items shown on the page
 [clearance](./readme_images/clearance.png)
 
+- Shopping cart page
 [Cart](./readme_images/cart.png)
 
+- Checkout page
 [Checkout](./readme_images/checkout.png)
 
+- The dropdown menu for all products provides options to navigate to specific item pages.
 [All Products](./readme_images/allprdt_dropdown.png)
 
+- Mail-chimp Subscribe button
 [Subscribe](./readme_images/subscribe.png)
 
+- User Registration page
 [Register](./readme_images/signup.png)
 
+- User sign in page
 [Sign In](./readme_images/sign_in.png)
 
+- Site admin store management page
 [Site Admin](./readme_images/site_admin.png)
 
+- Item detail page
 [Individual Product Page](./readme_images/individual_pdt.png)
 
+- Reviews page
 [Reviews](./readme_images/reviews.png)
 
+- Blog list view Page
 [Blog](./readme_images/Blog.png)
 
+- Blog detail view 
 [Blog deatail View](./readme_images/blog_detail.png)
 
 
