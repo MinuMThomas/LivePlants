@@ -38,7 +38,7 @@ img {
 
 .logo-shop {
     font-size: 42px;
-    background: -webkit-linear-gradient(#41a5ed, #1ea12de0);
+    background: -webkit-linear-gradient(#41ed77, #0867cce0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -416,7 +416,7 @@ a.category-badge > span.badge:hover {
     }
     
     .logo-shop{
-        padding-top: 1em;
+        padding-top: 2em;
         font-size: 22px;
     }
 
