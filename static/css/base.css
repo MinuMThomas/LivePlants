@@ -330,9 +330,7 @@ a.category-badge > span.badge:hover {
 
 #mc_embed_signup .optionalParent {
 
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; */
+   
     justify-content: center;
 }
 
@@ -420,6 +418,10 @@ a.category-badge > span.badge:hover {
         width: 200px;
         height: auto;
     }
+
+    .s-cart {
+        margin-top: 7px;
+    }
     .review{
         padding-top: 1em;
     }
@@ -440,8 +442,8 @@ a.category-badge > span.badge:hover {
     }
 
     /* mob nav bar */
-.mob-nav{
+    .mob-nav{
     font-size: 13px;
-}
+    }
 
 }
