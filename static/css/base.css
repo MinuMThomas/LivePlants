@@ -262,17 +262,24 @@ a.category-badge > span.badge:hover {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
-/* admin edit and delete button */
 
 .btn-edit,
 .update-btn {
-    color: rgb(7, 108, 7);
+    background: #fff !important;
+    color: rgb(13, 158, 110) !important;
+    font-weight: bolder !important;
+    padding: 0%;
 }
 
 .btn-delete,
-.remove-btn{
-    color: rgb(197, 10, 10)
+.remove-btn {
+    background: #fff !important;
+    color: rgb(165, 15, 15) !important;
+    font-weight: bolder !important;
+    padding: 0%;
 }
+
+
 
 /* Product Form */
 
@@ -382,7 +389,9 @@ a.category-badge > span.badge:hover {
         font-size: .9rem;
     }
 
-    .btn.btn-custom.btn-lg {
+    .btn,
+    .btn-custom,
+    .btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -394,7 +403,7 @@ a.category-badge > span.badge:hover {
 
 
     .quantity {
-        width: 60% !important;
+        width: 80% !important;
     }
 
     #bg-image{
