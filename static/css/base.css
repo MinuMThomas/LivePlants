@@ -46,6 +46,7 @@ img {
 #logo-dis {
     display: none;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -263,11 +264,13 @@ a.category-badge > span.badge:hover {
 }
 /* admin edit and delete button */
 
-.btn-edit{
+.btn-edit,
+.update-btn {
     color: rgb(7, 108, 7);
 }
 
-.btn-delete{
+.btn-delete,
+.remove-btn{
     color: rgb(197, 10, 10)
 }
 
