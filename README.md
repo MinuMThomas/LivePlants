@@ -647,7 +647,6 @@ class MediaStorage(S3Boto3Storage):
 - All Images used across the site were sourced from
       [pexels](https://www.pexels.com)
 - Plant details are taken from [Plantlife](https://plantlife.ie/)
-- Logo created from free logomaker site [site](https://myfreelogomaker.com/)
 
 - I relied on the  Django walk through projects mostly.
     Further research was done by building walk through projects available freely on youtube and especially pyplane [youtube page](https://www.youtube.com/@Pyplane/videos) 
