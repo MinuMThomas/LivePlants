@@ -316,6 +316,9 @@ a.category-badge > span.badge:hover {
 .footer{
     background-color:#a7f2d1;
 }
+#footer-list > li > a {
+    color: #000;
+}
 
 /* mailchimp */
 
