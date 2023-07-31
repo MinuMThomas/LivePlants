@@ -3,11 +3,11 @@
 {% load cart_tools %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -155,22 +155,22 @@
     });
 
     //  javascript for back to top button -->
-  
-    $(document).ready(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-          $('.scroll-btn').fadeIn();
-        } else {
-          $('.scroll-btn').fadeOut();
-        }
-      });
 
-      $('.scroll-btn').click(function() {
-        $('html, body').animate({ scrollTop: 0 }, 'slow');
-        return false;
-      });
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scroll-btn').fadeIn();
+            } else {
+                $('.scroll-btn').fadeOut();
+            }
+        });
+
+        $('.scroll-btn').click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 'slow');
+            return false;
+        });
     });
- 
 </script>
 {% endblock %}
-
