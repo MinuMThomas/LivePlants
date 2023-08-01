@@ -384,7 +384,7 @@ Stripe how to test cards interactively:
 
 The project very much got its start from Code Institutes walkthrough project Boutique Ado
 
-PROJECTS I looked through for inspiration and problem solving:
+Projects I looked through for inspiration and problem solving:
 
 - https://github.com/MinuMThomas/pp4-BB
 - https://github.com/SamuelMasters/play-store, 
