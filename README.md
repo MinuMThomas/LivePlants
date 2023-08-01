@@ -284,7 +284,7 @@ JavaScript code produced one warning about an undefined variable but this is not
 #### Lighthouse Testing
 Below you can see the results of Googles Lighthouse Testing.
 
-![Lighthouse Testing](./readme_images/light_house.png)
+![Lighthouse Testing](./readme_images/light-house_new.png)
 
 
 
