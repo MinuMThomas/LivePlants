@@ -118,8 +118,13 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-light text-info">
-                <div class="logo logo-font" id="logo-dis">Live Plants</div>
-                <h6 class="logo-font my-1">Free shipping on orders over €{{ free_delivery_threshold }}!</h6>
+                <div class="logo logo-font" id="logo-dis">
+                    <a href="{% url 'home' %}"> Live Plants</a>
+                </div>
+                <a href="{% url 'items' %}" class="banner" >
+                <h6 class="logo-font my-1">Free shipping on orders over €{{ free_delivery_threshold }}!
+                </a>
+                </h6>
             </div>
         </div>
         <!-- navbar toggler -->

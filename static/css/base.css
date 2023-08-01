@@ -47,6 +47,9 @@ img {
     display: none;
 }
 
+.banner {
+    color: #0d5866e0  !important;
+}
 /* from Bulma */
 .icon {
     align-items: center;
@@ -373,7 +376,7 @@ a.category-badge > span.badge:hover {
     }
 
     .home-item{
-        font-size: 22px;
+        font-size: 22px !important;
     }
     .nav-link {
         padding: 0.15rem;
